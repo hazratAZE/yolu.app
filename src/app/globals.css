@@ -27,3 +27,50 @@ body {
     text-wrap: balance;
   }
 }
+nav a {
+  font-size: 1rem; /* Masaüstünde büyük metin */
+}
+
+.header-icon {
+  justify-content: flex-start; /* Yolu ikonunu sola al */
+}
+h1 {
+  font-size: 3rem; /* Mobilde başlık boyutunu küçült */
+}
+p {
+  font-size: 1.25rem; /* Mobilde açıklama metnini küçült */
+}
+.downloadButton {
+  padding: 20px 120px; /* Mobilde buton boyutunu küçült */
+  font-size: 1.5rem; /* Mobilde buton metni boyutu */
+}
+/* Mobil cihazlar için düzen */
+@media (max-width: 768px) {
+  nav a {
+    font-size: 1.25rem; /* Mobilde metin boyutunu küçült */
+    text-align: center; /* Menü öğelerini ortala */
+  }
+
+  .header-icon {
+    justify-content: center; /* Yolu ikonu ortalansın */
+  }
+  h1 {
+    font-size: 2rem; /* Mobilde başlık boyutunu küçült */
+  }
+
+  p {
+    font-size: 1rem; /* Mobilde açıklama metnini küçült */
+  }
+
+  .downloadButton {
+    padding: 15px 60px; /* Mobilde buton boyutunu küçült */
+    font-size: 0.875rem; /* Mobilde buton metni boyutu */
+  }
+  /* Bars ikonu ve kapatma işareti */
+  .menu-toggle {
+    font-size: 1.5rem; /* Bars ikonu ve kapatma işareti boyutu */
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+}
