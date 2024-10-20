@@ -6,6 +6,7 @@ import Link from "next/link";
 
 const Header = () => {
   const [activeSection, setActiveSection] = useState("intro");
+  const [isMenuOpen, setIsMenuOpen] = useState(false); // Menü durumu
 
   const handleScroll = () => {
     const sections = document.querySelectorAll("section");
@@ -31,7 +32,7 @@ const Header = () => {
   return (
     <header className="bg-gray-800 text-white p-4 fixed w-full z-10">
       <div className="container mx-auto flex justify-between items-center">
-        {/* Uygulama İkonu */}
+        {/* Uygulama İkonu - En Solda */}
         <div className="flex items-center">
           <Image
             src="/icons/yolu.svg" // SVG ikonunun yolu
@@ -40,13 +41,13 @@ const Header = () => {
             height={46}
           />
         </div>
-        {/* Navigasyon Linkleri */}
-        <nav className="flex space-x-4">
+        {/* Navigasyon Linkleri (Desktop için) */}
+        <nav className="hidden md:flex space-x-4 ml-auto">
           <Link
             href="#intro"
             className={`relative hover:text-blue-400 ${
               activeSection === "intro" ? "text-blue-400 font-bold" : ""
-            }`}
+            } text-lg`}
           >
             Giriş
             <span
@@ -59,7 +60,7 @@ const Header = () => {
             href="#features"
             className={`relative hover:text-blue-400 ${
               activeSection === "features" ? "text-blue-400 font-bold" : ""
-            }`}
+            } text-lg`}
           >
             Özellikler
             <span
@@ -72,7 +73,7 @@ const Header = () => {
             href="#about"
             className={`relative hover:text-blue-400 ${
               activeSection === "about" ? "text-blue-400 font-bold" : ""
-            }`}
+            } text-lg`}
           >
             Hakkımızda
             <span
@@ -85,7 +86,7 @@ const Header = () => {
             href="#download"
             className={`relative hover:text-blue-400 ${
               activeSection === "download" ? "text-blue-400 font-bold" : ""
-            }`}
+            } text-lg`}
           >
             İndir
             <span
@@ -95,7 +96,64 @@ const Header = () => {
             ></span>
           </Link>
         </nav>
+
+        {/* Mobil Menü Düğmesi */}
+        <div className="md:hidden">
+          <button
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            className="text-white focus:outline-none"
+          >
+            {isMenuOpen ? "X" : <span>&#9776;</span>} {/* Hamburger iconu */}
+          </button>
+        </div>
       </div>
+      {/* Dropdown Menü (Mobil için) */}
+      <nav
+        className={`md:hidden ${
+          isMenuOpen ? "block" : "hidden"
+        } bg-gray-800 p-4`}
+      >
+        <div className="flex flex-col items-center space-y-2">
+          {" "}
+          {/* items-center eklendi */}
+          <Link
+            href="#intro"
+            className={`relative hover:text-blue-400 ${
+              activeSection === "intro" ? "text-blue-400 font-bold" : ""
+            } text-base`}
+            onClick={() => setIsMenuOpen(false)} // Menüyü kapat
+          >
+            Giriş
+          </Link>
+          <Link
+            href="#features"
+            className={`relative hover:text-blue-400 ${
+              activeSection === "features" ? "text-blue-400 font-bold" : ""
+            } text-base`}
+            onClick={() => setIsMenuOpen(false)} // Menüyü kapat
+          >
+            Özellikler
+          </Link>
+          <Link
+            href="#about"
+            className={`relative hover:text-blue-400 ${
+              activeSection === "about" ? "text-blue-400 font-bold" : ""
+            } text-base`}
+            onClick={() => setIsMenuOpen(false)} // Menüyü kapat
+          >
+            Hakkımızda
+          </Link>
+          <Link
+            href="#download"
+            className={`relative hover:text-blue-400 ${
+              activeSection === "download" ? "text-blue-400 font-bold" : ""
+            } text-base`}
+            onClick={() => setIsMenuOpen(false)} // Menüyü kapat
+          >
+            İndir
+          </Link>
+        </div>
+      </nav>
     </header>
   );
 };
