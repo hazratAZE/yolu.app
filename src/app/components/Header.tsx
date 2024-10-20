@@ -96,16 +96,40 @@ const Header = () => {
         } bg-gray-800 p-4`}
       >
         <div className="flex flex-col items-center space-y-2">
-          <Link href="#intro" onClick={() => setIsMenuOpen(false)}>
+          <Link
+            href="#intro"
+            onClick={() => setIsMenuOpen(false)}
+            className={`relative hover:text-blue-400 ${
+              activeSection === "intro" ? "text-blue-400 font-bold" : ""
+            }`}
+          >
             Giriş
           </Link>
-          <Link href="#features" onClick={() => setIsMenuOpen(false)}>
+          <Link
+            href="#features"
+            onClick={() => setIsMenuOpen(false)}
+            className={`relative hover:text-blue-400 ${
+              activeSection === "features" ? "text-blue-400 font-bold" : ""
+            }`}
+          >
             Xüsusiyyətlər
           </Link>
-          <Link href="#about" onClick={() => setIsMenuOpen(false)}>
+          <Link
+            href="#about"
+            onClick={() => setIsMenuOpen(false)}
+            className={`relative hover:text-blue-400 ${
+              activeSection === "about" ? "text-blue-400 font-bold" : ""
+            }`}
+          >
             Haqqında
           </Link>
-          <Link href="#download" onClick={() => setIsMenuOpen(false)}>
+          <Link
+            href="#download"
+            onClick={() => setIsMenuOpen(false)}
+            className={`relative hover:text-blue-400 ${
+              activeSection === "download" ? "text-blue-400 font-bold" : ""
+            }`}
+          >
             Yüklə
           </Link>
         </div>
