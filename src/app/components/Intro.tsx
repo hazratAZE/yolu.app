@@ -11,7 +11,7 @@ const Intro = () => {
             alt="Uygulama Ekran Görüntüsü"
             width={400}
             height={400}
-            className="object-contain w-[220px] h-[220px] md:w-[400px] md:h-[400px]" // Tailwind sınıflarıyla boyutlandırma
+            className="object-contain w-[200px] h-[200px] md:w-[400px] md:h-[400px]" // Tailwind sınıflarıyla boyutlandırma
           />
         </div>
 
@@ -33,9 +33,15 @@ const Intro = () => {
               href="https://play.google.com/store/apps/details?id=com.yolu.app"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-blue-500 text-white rounded-full font-semibold hover:bg-blue-600 transition downloadButton"
+              className="bg-blue-500 text-white rounded-full font-semibold hover:bg-blue-600 transition flex downloadButton"
             >
-              İndir
+              <span className="mr-2">İndi yüklə</span>
+              <Image
+                src={"/icons/android.svg"}
+                alt="Arrow Icon"
+                width={26} // İkon boyutu
+                height={26} // İkon boyutu
+              />
             </a>
           </div>
         </div>

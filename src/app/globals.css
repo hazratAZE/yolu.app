@@ -56,15 +56,18 @@ p {
   }
   h1 {
     font-size: 1.75rem; /* Mobilde başlık boyutunu küçült */
+    letter-spacing: 0.6px;
   }
 
   p {
-    font-size: 1rem; /* Mobilde açıklama metnini küçült */
+    font-size: 1rem;
+    letter-spacing: 0.6px;
+    /* Mobilde açıklama metnini küçült */
   }
 
   .downloadButton {
     padding: 15px 60px; /* Mobilde buton boyutunu küçült */
-    font-size: 0.875rem; /* Mobilde buton metni boyutu */
+    font-size: 1rem; /* Mobilde buton metni boyutu */
   }
   /* Bars ikonu ve kapatma işareti */
   .menu-toggle {
