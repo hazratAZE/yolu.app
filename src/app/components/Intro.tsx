@@ -19,13 +19,13 @@ const Intro = () => {
         <div className="md:w-1/2 text-center md:text-left order-2 md:order-1">
           {/* Başlık */}
           <h1 className="font-bold text-gray-800 mb-6">
-            Yolu ile Kariyerinizde Hızla İlerleyin
+            Yolu ilə Karyeranızda Sürətlə İrələyin
           </h1>
           {/* Kısa Açıklama */}
           <p className="text-gray-600 max-w-2xl mx-auto mb-8">
-            Yolu, iş arama ve kariyer geliştirme konusunda yenilikçi çözümler
-            sunar. Yolu ile iş bulmak, iş ilanı vermek ve kariyerinizde yeni
-            fırsatlar keşfetmek daha kolay.
+            Yolu, iş axtarışı və karyera inkişafı ilə bağlı yenilikçi həllər
+            təqdim edir. Yolu ilə iş tapmaq, iş elanları vermək və karyeranızda
+            yeni fürsətlər kəşf etmək daha asandır.
           </p>
           {/* İndir Butonu */}
           <div className="flex justify-center md:justify-start">

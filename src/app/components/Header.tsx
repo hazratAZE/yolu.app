@@ -58,7 +58,7 @@ const Header = () => {
               activeSection === "features" ? "text-blue-400 font-bold" : ""
             }`}
           >
-            Özellikler
+            Xüsusiyyətlər
           </Link>
           <Link
             href="#about"
@@ -66,7 +66,7 @@ const Header = () => {
               activeSection === "about" ? "text-blue-400 font-bold" : ""
             }`}
           >
-            Hakkımızda
+            Haqqında
           </Link>
           <Link
             href="#download"
@@ -74,7 +74,7 @@ const Header = () => {
               activeSection === "download" ? "text-blue-400 font-bold" : ""
             }`}
           >
-            İndir
+            Yüklə
           </Link>
         </nav>
 
@@ -100,13 +100,13 @@ const Header = () => {
             Giriş
           </Link>
           <Link href="#features" onClick={() => setIsMenuOpen(false)}>
-            Özellikler
+            Xüsusiyyətlər
           </Link>
           <Link href="#about" onClick={() => setIsMenuOpen(false)}>
-            Hakkımızda
+            Haqqında
           </Link>
           <Link href="#download" onClick={() => setIsMenuOpen(false)}>
-            İndir
+            Yüklə
           </Link>
         </div>
       </nav>

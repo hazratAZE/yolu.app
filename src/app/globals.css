@@ -55,7 +55,7 @@ p {
     justify-content: center; /* Yolu ikonu ortalansın */
   }
   h1 {
-    font-size: 2rem; /* Mobilde başlık boyutunu küçült */
+    font-size: 1.75rem; /* Mobilde başlık boyutunu küçült */
   }
 
   p {
