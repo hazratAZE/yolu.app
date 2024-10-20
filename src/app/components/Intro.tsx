@@ -30,18 +30,12 @@ const Intro = () => {
           {/* İndir Butonu */}
           <div className="flex justify-center md:justify-start">
             <a
-              href="https://play.google.com/store/apps/details?id=com.yolu.app"
+              href="#download"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-blue-500 text-white rounded-full font-semibold hover:bg-blue-600 transition flex downloadButton"
+              className="bg-blue-500 text-white rounded-full font-semibold hover:bg-blue-600 transition downloadButton"
             >
-              <span className="mr-2">İndi yüklə</span>
-              <Image
-                src={"/icons/android.svg"}
-                alt="Arrow Icon"
-                width={26} // İkon boyutu
-                height={26} // İkon boyutu
-              />
+              İndi yüklə
             </a>
           </div>
         </div>
