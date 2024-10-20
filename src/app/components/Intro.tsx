@@ -22,7 +22,9 @@ const Intro = () => {
           {/* İndir Butonu */}
           <div className="flex justify-center md:justify-start">
             <a
-              href="#download"
+              href="https://play.google.com/store/apps/details?id=com.yolu.app" // Buraya yönlendirmek istediğiniz URL'yi ekleyin
+              target="_blank" // Yeni sekmede açılması için
+              rel="noopener noreferrer" // Güvenlik önlemi
               className="bg-blue-500 text-white rounded-full px-20 py-5 font-semibold text-xl hover:bg-blue-600 transition"
             >
               İndir

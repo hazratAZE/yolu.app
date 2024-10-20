@@ -9,7 +9,7 @@ const Header = () => {
 
   const handleScroll = () => {
     const sections = document.querySelectorAll("section");
-    let scrollPosition = window.scrollY + 100; // Scroll pozisyonunu ayarlayın
+    const scrollPosition = window.scrollY + 100; // Scroll pozisyonunu ayarlayın
 
     sections.forEach((section) => {
       if (
