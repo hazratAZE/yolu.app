@@ -4,14 +4,25 @@ const Intro = () => {
   return (
     <section id="intro" className="bg-gray-100 min-h-screen flex items-center">
       <div className="container mx-auto px-4 flex flex-col md:flex-row items-center">
+        {/* Mobilde Yukarıda Olacak Görsel */}
+        <div className="md:w-1/2 flex justify-center order-1 md:order-2 mb-8 md:mb-0">
+          <Image
+            src="/icons/workers.svg"
+            alt="Uygulama Ekran Görüntüsü"
+            width={400}
+            height={400}
+            className="object-contain w-[220px] h-[220px] md:w-[400px] md:h-[400px]" // Tailwind sınıflarıyla boyutlandırma
+          />
+        </div>
+
         {/* Sol Taraf (Yazılar) */}
-        <div className="md:w-1/2 text-center md:text-left mb-8 md:mb-0">
+        <div className="md:w-1/2 text-center md:text-left order-2 md:order-1">
           {/* Başlık */}
           <h1 className="font-bold text-gray-800 mb-6">
             Yolu ile Kariyerinizde Hızla İlerleyin
           </h1>
           {/* Kısa Açıklama */}
-          <p className=" text-gray-600 max-w-2xl mx-auto mb-8">
+          <p className="text-gray-600 max-w-2xl mx-auto mb-8">
             Yolu, iş arama ve kariyer geliştirme konusunda yenilikçi çözümler
             sunar. Yolu ile iş bulmak, iş ilanı vermek ve kariyerinizde yeni
             fırsatlar keşfetmek daha kolay.
@@ -22,22 +33,11 @@ const Intro = () => {
               href="https://play.google.com/store/apps/details?id=com.yolu.app"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-blue-500 text-white rounded-full font-semibold  hover:bg-blue-600 transition downloadButton"
+              className="bg-blue-500 text-white rounded-full font-semibold hover:bg-blue-600 transition downloadButton"
             >
               İndir
             </a>
           </div>
-        </div>
-
-        {/* Sağ Taraf (Görsel) */}
-        <div className="md:w-1/2 flex justify-center">
-          <Image
-            src="/icons/workers.svg"
-            alt="Uygulama Ekran Görüntüsü"
-            width={400}
-            height={400}
-            className="object-contain w-[220px] h-[220px] md:w-[400px] md:h-[400px]" // Tailwind sınıflarıyla boyutlandırma
-          />
         </div>
       </div>
     </section>
