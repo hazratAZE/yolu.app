@@ -31,10 +31,10 @@ const Ozellikler = () => {
   return (
     <section
       id="features"
-      className="bg-gray-100 min-h-screen flex flex-col justify-center py-12"
+      className="bg-gray-100 min-h-screen flex flex-col justify-center pt-16"
     >
       <div className="container mx-auto px-4">
-        <h1 className="text-center text-black font-bold">Əsas Xüsusiyyətlər</h1>
+        <h1 className="text-center text-black font-bold">Xüsusiyyətlər</h1>
         <div className="text-center justify-center flex mt-4">
           <p className="text-gray-600 mb-8 w-[80%]">
             Yolu platformasının təqdim etdiyi daha çox unikal xüsusiyyətlərdən

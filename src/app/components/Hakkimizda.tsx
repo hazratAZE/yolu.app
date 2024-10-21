@@ -2,7 +2,7 @@ const Hakkımızda = () => {
   return (
     <section
       id="about"
-      className="min-h-screen flex flex-col items-center justify-center py-4"
+      className="min-h-screen flex flex-col items-center justify-center pt-16"
     >
       <h1 className="font-bold mb-4 text-black">Hakkımızda</h1>
       <p className="text-center mb-8 text-gray-600 w-[80%]">
