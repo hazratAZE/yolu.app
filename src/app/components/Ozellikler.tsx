@@ -34,11 +34,9 @@ const Ozellikler = () => {
       className="bg-gray-100 min-h-screen flex flex-col justify-center py-12"
     >
       <div className="container mx-auto px-4">
-        <h2 className="text-center text-black text-5xl font-bold">
-          Əsas Xüsusiyyətlər
-        </h2>
+        <h1 className="text-center text-black font-bold">Əsas Xüsusiyyətlər</h1>
         <div className="text-center mt-4">
-          <p className="text-gray-600 font-medium text-sm mb-8">
+          <p className="text-gray-600 font-medium mb-8">
             Yolu platformasının təqdim etdiyi daha çox unikal xüsusiyyətlərdən
             faydalanmaq və iş dünyasında rəqiblərinizdən bir addım öndə olmaq
             üçün bizə qoşulun!
@@ -61,7 +59,7 @@ const Ozellikler = () => {
                   className="object-contain"
                 />
               </div>
-              <div className="text-gray-700 font-light text-md">
+              <div className="text-gray-700 font-light text-sm">
                 {feature.text}
               </div>
             </div>
