@@ -35,8 +35,8 @@ const Ozellikler = () => {
     >
       <div className="container mx-auto px-4">
         <h1 className="text-center text-black font-bold">Əsas Xüsusiyyətlər</h1>
-        <div className="text-center mt-4">
-          <p className="text-gray-600 mb-8">
+        <div className="text-center justify-center flex mt-4">
+          <p className="text-gray-600 mb-8 w-[80%]">
             Yolu platformasının təqdim etdiyi daha çox unikal xüsusiyyətlərdən
             faydalanmaq və iş dünyasında rəqiblərinizdən bir addım öndə olmaq
             üçün bizə qoşulun!
@@ -54,12 +54,12 @@ const Ozellikler = () => {
                 <Image
                   src={feature.icon}
                   alt={`Feature ${index + 1}`}
-                  width={50} // İkon boyutunu artırdık ve sabitledik
-                  height={50}
+                  width={46} // İkon boyutunu artırdık ve sabitledik
+                  height={46}
                   className="object-contain"
                 />
               </div>
-              <div className="text-gray-700 font-light text-sm">
+              <div className="text-gray-600 font-light text-sm">
                 {feature.text}
               </div>
             </div>
