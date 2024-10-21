@@ -36,7 +36,7 @@ const Ozellikler = () => {
       <div className="container mx-auto px-4">
         <h1 className="text-center text-black font-bold">Əsas Xüsusiyyətlər</h1>
         <div className="text-center mt-4">
-          <p className="text-gray-600 font-medium mb-8">
+          <p className="text-gray-600 mb-8">
             Yolu platformasının təqdim etdiyi daha çox unikal xüsusiyyətlərdən
             faydalanmaq və iş dünyasında rəqiblərinizdən bir addım öndə olmaq
             üçün bizə qoşulun!
