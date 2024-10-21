@@ -41,8 +41,8 @@ p {
   font-size: 1.25rem; /* Mobilde açıklama metnini küçült */
 }
 .downloadButton {
-  padding: 20px 120px; /* Mobilde buton boyutunu küçült */
-  font-size: 1.5rem; /* Mobilde buton metni boyutu */
+  padding: 20px 100px; /* Mobilde buton boyutunu küçült */
+  font-size: 1.25rem; /* Mobilde buton metni boyutu */
 }
 /* Mobil cihazlar için düzen */
 @media (max-width: 768px) {
