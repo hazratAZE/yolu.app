@@ -33,8 +33,15 @@ const Intro = () => {
               href="#download"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-blue-500 text-white rounded-full font-semibold hover:bg-blue-600 transition downloadButton"
+              className="bg-blue-500 text-white rounded-full font-medium hover:bg-blue-600 transition flex items-center downloadButton"
             >
+              <Image
+                src="/icons/download.svg" // İndir simgesi için doğru yol
+                alt="İndir"
+                width={28} // Simgenin genişliği
+                height={28} // Simgenin yüksekliği
+                className="mr-2" // Simge ve metin arasında boşluk
+              />
               İndi yüklə
             </a>
           </div>
