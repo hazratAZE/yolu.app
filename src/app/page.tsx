@@ -10,8 +10,8 @@ export default function Home() {
       <Header /> {/* Header'ı ekle */}
       <main className="flex flex-col items-center justify-center p-8">
         <Intro /> {/* Intro bileşeni */}
-        <Ozellikler /> {/* Özellikler bileşeni */}
         <Hakkimizda /> {/* Hakkımızda bileşeni */}
+        <Ozellikler /> {/* Özellikler bileşeni */}
         <Indir /> {/* İndir bileşeni */}
         <Footer /> {/* Footer'ı burada ekliyoruz */}
       </main>

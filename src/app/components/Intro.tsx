@@ -11,7 +11,7 @@ const Intro = () => {
             alt="Uygulama Ekran Görüntüsü"
             width={420}
             height={420}
-            className="object-contain w-[220px] h-[220px] md:w-[420px] md:h-[420px]" // Tailwind sınıflarıyla boyutlandırma
+            className="object-contain w-[260px] h-[220px] md:w-[440px] md:h-[420px]" // Tailwind sınıflarıyla boyutlandırma
           />
         </div>
 
@@ -22,7 +22,7 @@ const Intro = () => {
             Yolu’ya Xoş Gəldiniz!
           </h1>
           {/* Kısa Açıklama */}
-          <p className="text-gray-600 max-w-2xl mx-auto mb-6">
+          <p className="text-gray-600 max-w-2xl mx-auto mb-8">
             Yolu, iş axtarışı və karyera inkişafı ilə bağlı yenilikçi həllər
             təqdim edir. Yolu ilə iş tapmaq, iş elanları vermək və karyeranızda
             yeni fürsətlər kəşf etmək daha asandır.

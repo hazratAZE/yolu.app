@@ -35,7 +35,7 @@ nav a {
   justify-content: flex-start; /* Yolu ikonunu sola al */
 }
 h1 {
-  font-size: 3rem; /* Mobilde başlık boyutunu küçült */
+  font-size: 3.5rem; /* Mobilde başlık boyutunu küçült */
 }
 p {
   font-size: 1.25rem; /* Mobilde açıklama metnini küçült */
@@ -60,13 +60,13 @@ p {
   }
 
   p {
-    font-size: 1rem;
+    font-size: 0.9rem;
     letter-spacing: 0.6px;
     /* Mobilde açıklama metnini küçült */
   }
 
   .downloadButton {
-    padding: 15px 60px; /* Mobilde buton boyutunu küçült */
+    padding: 15px 80px; /* Mobilde buton boyutunu küçült */
     font-size: 1rem; /* Mobilde buton metni boyutu */
   }
   /* Bars ikonu ve kapatma işareti */

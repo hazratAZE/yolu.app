@@ -53,14 +53,6 @@ const Header = () => {
             Giriş
           </Link>
           <Link
-            href="#features"
-            className={`relative hover:text-blue-400 ${
-              activeSection === "features" ? "text-blue-400 font-bold" : ""
-            }`}
-          >
-            Xüsusiyyətlər
-          </Link>
-          <Link
             href="#about"
             className={`relative hover:text-blue-400 ${
               activeSection === "about" ? "text-blue-400 font-bold" : ""
@@ -68,6 +60,15 @@ const Header = () => {
           >
             Haqqında
           </Link>
+          <Link
+            href="#features"
+            className={`relative hover:text-blue-400 ${
+              activeSection === "features" ? "text-blue-400 font-bold" : ""
+            }`}
+          >
+            Xüsusiyyətlər
+          </Link>
+
           <Link
             href="#download"
             className={`relative hover:text-blue-400 ${
@@ -106,15 +107,6 @@ const Header = () => {
             Giriş
           </Link>
           <Link
-            href="#features"
-            onClick={() => setIsMenuOpen(false)}
-            className={`relative hover:text-blue-400 ${
-              activeSection === "features" ? "text-blue-400 font-bold" : ""
-            }`}
-          >
-            Xüsusiyyətlər
-          </Link>
-          <Link
             href="#about"
             onClick={() => setIsMenuOpen(false)}
             className={`relative hover:text-blue-400 ${
@@ -123,6 +115,16 @@ const Header = () => {
           >
             Haqqında
           </Link>
+          <Link
+            href="#features"
+            onClick={() => setIsMenuOpen(false)}
+            className={`relative hover:text-blue-400 ${
+              activeSection === "features" ? "text-blue-400 font-bold" : ""
+            }`}
+          >
+            Xüsusiyyətlər
+          </Link>
+
           <Link
             href="#download"
             onClick={() => setIsMenuOpen(false)}
