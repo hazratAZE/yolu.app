@@ -19,7 +19,7 @@ const Intro = () => {
         <div className="md:w-1/2 text-center md:text-left order-2 md:order-1">
           {/* Başlık */}
           <h1 className="font-bold text-gray-800 mb-4">
-            Yolu ilə Karyeranızda Sürətlə İrələyin
+            Yolu’ya Xoş Gəldiniz!
           </h1>
           {/* Kısa Açıklama */}
           <p className="text-gray-600 max-w-2xl mx-auto mb-6">
