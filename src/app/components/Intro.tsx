@@ -5,7 +5,7 @@ const Intro = () => {
     <section id="intro" className="bg-gray-100 min-h-screen flex items-center">
       <div className="container mx-auto px-4 flex flex-col md:flex-row items-center">
         {/* Mobilde Yukarıda Olacak Görsel */}
-        <div className="md:w-1/2 flex justify-center order-1 md:order-2 mb-6 md:mb-0">
+        <div className="md:w-1/2 flex justify-center order-1 md:order-2 mb-2 md:mb-0">
           <Image
             src="/icons/workers.svg"
             alt="Uygulama Ekran Görüntüsü"
