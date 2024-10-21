@@ -83,9 +83,9 @@ const Header = () => {
         <div className="md:hidden">
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="menu-toggle text-white focus:outline-none"
+            className="menu-toggle text-white focus:outline-none text-lg"
           >
-            {isMenuOpen ? "X" : <span>&#9776;</span>}
+            {isMenuOpen ? <span>&#215;</span> : <span>&#9776;</span>}
           </button>
         </div>
       </div>
