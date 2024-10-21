@@ -33,7 +33,7 @@ const Intro = () => {
               href="#download"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-blue-500 text-white rounded-full font-medium hover:bg-blue-600 transition flex items-center downloadButton"
+              className="bg-blue-500 text-white rounded-full hover:bg-blue-600 transition flex items-center downloadButton"
             >
               <Image
                 src="/icons/download.svg" // İndir simgesi için doğru yol
