@@ -46,8 +46,8 @@ const Indir = () => {
       {/* Flexbox kullanarak resim ve metin düzeni */}
       <div className="flex flex-col md:flex-row items-stretch justify-center gap-6 w-full max-w-screen-lg">
         {/* Paragraf Sol Taraf */}
-        <div className="md:w-1/2 flex items-center bg-white p-6 h-[400px]">
-          <p className="text-gray-800 text-sm font-md text-left mb-0">
+        <div className="md:w-1/2 flex items-center bg-white p-6 md:h-[400px] overflow-hidden">
+          <p className="text-gray-800 text-sm font-md text-left mb-0 py-1">
             Uygulamamızın üstün xüsusiyyətlərini kəşf edin! İstədiyiniz zaman,
             istədiyiniz yerdə sərfəli təkliflərdən yararlanmaq üçün dərhal
             yükləyin. Sizin üçün yaradılmış mükəmməl bir tətbiq ilə bütün
