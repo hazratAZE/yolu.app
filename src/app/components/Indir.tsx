@@ -10,12 +10,12 @@ interface CustomAlertProps {
 const CustomAlert: React.FC<CustomAlertProps> = ({ message, onClose }) => {
   return (
     <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
-      <div className="bg-white rounded-lg p-6 shadow-lg max-w-sm w-full">
-        <h2 className="text-black text-lg font-bold text-center">{message}</h2>
+      <div className="bg-white rounded-3xl p-6 shadow-lg md:w-[30%] sm: w-[90%]">
+        <h2 className="text-black text-md font-light text-center">{message}</h2>
         <div className="mt-4 flex justify-center">
           <button
             onClick={onClose}
-            className="bg-blue-500 text-white px-6 py-2 rounded-full"
+            className="bg-orange-500 text-white px-6 py-2 rounded-full"
           >
             Bağla
           </button>
@@ -83,7 +83,7 @@ const Indir = () => {
       {/* Custom Alert Bileşeni */}
       {isAlertVisible && (
         <CustomAlert
-          message="Tətbiq iOS üçün hələ əlavə edilməyib, çox yaxında iOS-da mövcud olacaq."
+          message="Tətbiqimiz iOS platformasında hələlik mövcud deyil. Lakin, iOS istifadəçiləri üçün mükəmməl bir təcrübə yaratmaq üzərində çalışırıq. Dikkatiniz üçün təşəkkür edirik, yaxın zamanda iOS-da da bizimlə olacaqsınız!"
           onClose={closeAlert}
         />
       )}

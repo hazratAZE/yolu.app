@@ -6,7 +6,19 @@ const Footer = () => {
         {/* Sosyal Medya İkonları */}
         <div className="flex justify-center space-x-6 mb-4 md:mb-0">
           <a
-            href="https://facebook.com"
+            href="https://www.linkedin.com/company/101312119/admin/feed/posts/?feedType=following"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Facebook"
+          >
+            <img
+              src="/icons/linkedin.svg"
+              alt="Linkedin"
+              className="w-8 h-8 hover:opacity-80 transition-opacity"
+            />
+          </a>
+          <a
+            href="https://www.facebook.com/profile.php?id=61556691660894"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Facebook"
@@ -18,7 +30,7 @@ const Footer = () => {
             />
           </a>
           <a
-            href="https://instagram.com"
+            href="https://www.instagram.com/yolu.app/"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Instagram"
@@ -30,7 +42,7 @@ const Footer = () => {
             />
           </a>
           <a
-            href="https://tiktok.com"
+            href="https://www.tiktok.com/@yolu_app"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="TikTok"
@@ -42,7 +54,7 @@ const Footer = () => {
             />
           </a>
           <a
-            href="https://twitter.com"
+            href="https://twitter.com/YoluApp"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Twitter"
