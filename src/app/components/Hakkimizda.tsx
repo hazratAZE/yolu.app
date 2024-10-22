@@ -11,7 +11,7 @@ const Hakkımızda = () => {
       id="about"
       className="min-h-screen flex flex-col items-center justify-center pt-16"
     >
-      <h1 className="font-bold mb-4 text-black">Hakkımızda</h1>
+      <h1 className="font-bold mb-4 text-black">Haqqında</h1>
       <p className="text-center mb-16 text-gray-600 w-[80%]">
         Yolu, iş dünyasında inqilab yaradan yenilikçi bir platformdur. Biz, iş
         axtarışı və karyera inkişafı ilə bağlı istifadəçilərimizin bütün
