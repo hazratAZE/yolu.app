@@ -76,7 +76,7 @@ const Indir = () => {
         </div>
       </div>
 
-      <div className="flex flex-col md:flex-row gap-6 w-full max-w-screen-lg mt-12">
+      <div className="flex flex-col md:flex-row gap-6 w-full max-w-screen-lg mt-24">
         <div className="relative w-full md:w-3/4">
           <a
             className="flex justify-center items-center gap-4 bg-white text-black px-10 py-8 rounded-full text-2xl font-bold hover:bg-blue-100 transition-all"
