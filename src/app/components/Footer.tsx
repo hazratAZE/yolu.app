@@ -2,7 +2,7 @@
 const Footer = () => {
   return (
     <footer className="text-black py-6 mt-20">
-      <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
+      <div className="container mx-auto flex flex-col md:flex-row justify-between items-center mb-12">
         {/* Sosyal Medya İkonları */}
         <div className="flex justify-center space-x-6 mb-4 md:mb-0">
           <a
@@ -68,15 +68,15 @@ const Footer = () => {
         </div>
 
         {/* İletişim Bilgileri */}
-        <div className="text-left md:text-left mb-4 md:mb-0 flex flex-col items-start md:ml-12">
-          <p className="text-lg">Email: yoluapplication@gmail.com</p>
-          <p className="text-lg">Telefon: +994 55 374 98 01</p>
+        <div className="text-center mb-4 md:mb-0 flex flex-col md:ml-12">
+          <p className="text-md">Email: info@yolu.app</p>
+          <p className="text-md">Telefon: +994 55 374 98 01</p>
         </div>
       </div>
 
       {/* Tüm Hakları Saklıdır */}
       <div className="text-center mt-4">
-        <p className="text-lg">
+        <p className="text-md">
           © {new Date().getFullYear()} Yolu. Bütün hüquqlar qorunur
         </p>
       </div>
