@@ -1,4 +1,11 @@
+"use client";
+
 const Hakkımızda = () => {
+  const scrollToContact = () => {
+    // Sayfanın en altına kaydırmak için window.scrollTo kullanabilirsiniz
+    window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
+  };
+
   return (
     <section
       id="about"
@@ -88,12 +95,12 @@ const Hakkımızda = () => {
       </div>
 
       {/* İletişim Butonu */}
-      <a
-        href="#contact"
-        className="bg-white text-black rounded-full font-semibold hover:bg-gray-200 transition duration-300 px-6 py-3"
+      <button
+        onClick={scrollToContact}
+        className="bg-white text-black rounded-full font-semibold hover:bg-gray-200 transition duration-300 px-8 py-4"
       >
         Bizimlə Əlaqə
-      </a>
+      </button>
     </section>
   );
 };
