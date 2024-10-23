@@ -3,16 +3,22 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
+import { useRouter } from "next/navigation";
+import { usePathname, useSearchParams } from "next/navigation";
 
 // Dil türü belirliyoruz
-type Language = "AZ" | "EN" | "TR" | "RU";
+type Language = "AZ" | "EN" | "RU" | "TR";
 
 const Header = () => {
+  const t = useTranslations();
+  const router = useRouter();
   const [activeSection, setActiveSection] = useState("intro");
   const [isMenuOpen, setIsMenuOpen] = useState(false); // Menü durumu
   const [isLangDropdownOpen, setIsLangDropdownOpen] = useState(false); // Dil dropdown durumu
   const [selectedLanguage, setSelectedLanguage] = useState<Language>("AZ"); // Varsayılan dil
-
+  const pathname = usePathname(); // Aktif yol
+  const searchParams = useSearchParams();
   // Bayrak dosyaları eşlemesi
   const flagMap = {
     AZ: "/icons/az-flag.svg",
@@ -51,7 +57,19 @@ const Header = () => {
   const changeLanguage = (lang: Language) => {
     setSelectedLanguage(lang);
     setIsLangDropdownOpen(false);
-    console.log("Dil değişti:", lang); // Dil değiştirme işlemi burada yapılabilir
+    console.log("Dil değişti:", lang);
+
+    // Mevcut URL'deki sorgu parametrelerini al
+    const currentQuery = Object.fromEntries(searchParams.entries());
+
+    // Yeni path'i oluşturun: mevcut path'den son dil kodunu çıkarıp yenisini ekleyin
+    const newPath = pathname.replace(
+      /\/[a-z]{2}$/,
+      `/${lang.toLocaleLowerCase()}`
+    ); // /en veya /az gibi dil kodunu al ve yenisi ile değiştir
+
+    // Router ile yönlendirme yap
+    router.push(newPath);
   };
 
   return (
@@ -71,7 +89,7 @@ const Header = () => {
                 activeSection === "intro" ? "text-blue-400 font-bold" : ""
               }`}
             >
-              Giriş
+              {t("hello")}
             </Link>
             <Link
               href="#about"
