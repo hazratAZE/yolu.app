@@ -2,5 +2,8 @@
   "about": "Hakkında",
   "intro": "Giriş",
   "features": "Özellikler",
-  "download": "İndir"
+  "download": "İndir",
+  "welcome": "Yolu'ya Hoş Geldiniz!",
+  "welcome_desc": "Yolu, iş arama ve kariyer geliştirme ile ilgili yenilikçi çözümler sunar. Yolu ile iş bulmak, iş ilanı vermek ve kariyerinizde yeni fırsatlar keşfetmek daha kolaydır.",
+  "download_now": "Şimdi İndir"
 }

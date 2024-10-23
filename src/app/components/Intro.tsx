@@ -1,6 +1,8 @@
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 
 const Intro = () => {
+  const t = useTranslations();
   return (
     <section id="intro" className="bg-gray-100 min-h-screen flex items-center">
       <div className="container mx-auto px-4 flex flex-col md:flex-row items-center">
@@ -18,14 +20,10 @@ const Intro = () => {
         {/* Sol Taraf (Yazılar) */}
         <div className="md:w-1/2 text-center md:text-left order-2 md:order-1">
           {/* Başlık */}
-          <h1 className="font-bold text-gray-800 mb-4">
-            Yolu’ya Xoş Gəldiniz!
-          </h1>
+          <h1 className="font-bold text-gray-800 mb-4">{t("welcome")}</h1>
           {/* Kısa Açıklama */}
           <p className="text-gray-600 max-w-2xl mx-auto mb-8">
-            Yolu, iş axtarışı və karyera inkişafı ilə bağlı yenilikçi həllər
-            təqdim edir. Yolu ilə iş tapmaq, iş elanları vermək və karyeranızda
-            yeni fürsətlər kəşf etmək daha asandır.
+            {t("welcome_desc")}
           </p>
           {/* İndir Butonu */}
           <div className="flex justify-center md:justify-start">
@@ -42,7 +40,7 @@ const Intro = () => {
                 height={28} // Simgenin yüksekliği
                 className="mr-2" // Simge ve metin arasında boşluk
               />
-              İndi yüklə
+              {t("download_now")}
             </a>
           </div>
         </div>
