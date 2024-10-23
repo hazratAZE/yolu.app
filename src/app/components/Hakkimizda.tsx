@@ -1,22 +1,21 @@
 "use client";
 
+import { useTranslations } from "next-intl";
+
 const Hakkımızda = () => {
+  const t = useTranslations();
   const scrollToContact = () => {
     // Sayfanın en altına kaydırmak için window.scrollTo kullanabilirsiniz
     window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
   };
-
   return (
     <section
       id="about"
       className="min-h-screen flex flex-col items-center justify-center pt-16"
     >
-      <h1 className="font-bold mb-4 text-black">Haqqında</h1>
+      <h1 className="font-bold mb-4 text-black">{t("about")}</h1>
       <p className="text-center mb-16 text-gray-600 w-[80%]">
-        Yolu, iş dünyasında inqilab yaradan yenilikçi bir platformdur. Biz, iş
-        axtarışı və karyera inkişafı ilə bağlı istifadəçilərimizin bütün
-        ehtiyaclarını qarşılayırıq. Yolu ilə yeni fürsətləri kəşf edin,
-        kariyeranızı bir addım irəliləyin!
+        {t("about_desc")}
       </p>
       <div className="flex flex-col mb-20">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
