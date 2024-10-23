@@ -18,7 +18,6 @@ const Header = () => {
   const [isLangDropdownOpen, setIsLangDropdownOpen] = useState(false); // Dil dropdown durumu
   const [selectedLanguage, setSelectedLanguage] = useState<Language>("AZ"); // Varsayılan dil
   const pathname = usePathname(); // Aktif yol
-  const searchParams = useSearchParams();
   // Bayrak dosyaları eşlemesi
   const flagMap = {
     AZ: "/icons/az-flag.svg",
@@ -58,10 +57,6 @@ const Header = () => {
     setSelectedLanguage(lang);
     setIsLangDropdownOpen(false);
     console.log("Dil değişti:", lang);
-
-    // Mevcut URL'deki sorgu parametrelerini al
-    const currentQuery = Object.fromEntries(searchParams.entries());
-
     // Yeni path'i oluşturun: mevcut path'den son dil kodunu çıkarıp yenisini ekleyin
     const newPath = pathname.replace(
       /\/[a-z]{2}$/,
