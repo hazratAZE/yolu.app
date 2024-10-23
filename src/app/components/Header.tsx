@@ -90,7 +90,7 @@ const Header = () => {
                 activeSection === "intro" ? "text-blue-400 font-bold" : ""
               }`}
             >
-              {t("hello")}
+              {t("intro")}
             </Link>
             <Link
               href="#about"
@@ -98,7 +98,7 @@ const Header = () => {
                 activeSection === "about" ? "text-blue-400 font-bold" : ""
               }`}
             >
-              Haqqında
+              {t("about")}
             </Link>
             <Link
               href="#features"
@@ -106,7 +106,7 @@ const Header = () => {
                 activeSection === "features" ? "text-blue-400 font-bold" : ""
               }`}
             >
-              Xüsusiyyətlər
+              {t("features")}
             </Link>
             <Link
               href="#download"
@@ -114,7 +114,7 @@ const Header = () => {
                 activeSection === "download" ? "text-blue-400 font-bold" : ""
               }`}
             >
-              Yüklə
+              {t("download")}
             </Link>
 
             {/* Dil Dropdown */}
@@ -126,12 +126,13 @@ const Header = () => {
                 {/* Seçilen dil ve bayrak */}
                 <Image
                   src={flagMap[selectedLanguage]}
-                  alt={`${selectedLanguage} Flag`}
+                  alt={`${selectedLanguage.toUpperCase()} Flag`}
                   width={20}
                   height={20}
                   className="mr-2"
                 />
-                {selectedLanguage} <span className="ml-2">&#9662;</span>
+                {selectedLanguage.toUpperCase()}{" "}
+                <span className="ml-2">&#9662;</span>
               </button>
               {isLangDropdownOpen && (
                 <ul className="absolute right-0 mt-2 bg-gray-700 text-white py-2 w-32 shadow-lg rounded">
@@ -218,7 +219,7 @@ const Header = () => {
               activeSection === "intro" ? "text-blue-400 font-bold" : ""
             }`}
           >
-            Giriş
+            {t("intro")}
           </Link>
           <Link
             href="#about"
@@ -227,7 +228,7 @@ const Header = () => {
               activeSection === "about" ? "text-blue-400 font-bold" : ""
             }`}
           >
-            Haqqında
+            {t("about")}
           </Link>
           <Link
             href="#features"
@@ -236,7 +237,7 @@ const Header = () => {
               activeSection === "features" ? "text-blue-400 font-bold" : ""
             }`}
           >
-            Xüsusiyyətlər
+            {t("features")}
           </Link>
           <Link
             href="#download"
@@ -245,7 +246,7 @@ const Header = () => {
               activeSection === "download" ? "text-blue-400 font-bold" : ""
             }`}
           >
-            Yüklə
+            {t("download")}
           </Link>
 
           {/* Dil Dropdown - Mobilde de mevcut */}
@@ -257,12 +258,13 @@ const Header = () => {
               {/* Seçilen dil ve bayrak mobilde de görünsün */}
               <Image
                 src={flagMap[selectedLanguage]}
-                alt={`${selectedLanguage} Flag`}
+                alt={`${selectedLanguage.toUpperCase()} Flag`}
                 width={20}
                 height={20}
                 className="mr-2"
               />
-              {selectedLanguage} <span className="ml-2">&#9662;</span>
+              {selectedLanguage.toUpperCase()}{" "}
+              <span className="ml-2">&#9662;</span>
             </button>
             {isLangDropdownOpen && (
               <ul className="absolute right-0 mt-2 bg-gray-700 text-white py-2 w-32 shadow-lg rounded">

@@ -1,3 +1,6 @@
 {
-  "hello": "privet"
+  "about": "О нас",
+  "intro": "Введение",
+  "features": "Особенности",
+  "download": "Скачать"
 }

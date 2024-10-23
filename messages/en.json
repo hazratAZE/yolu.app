@@ -1,3 +1,6 @@
 {
-  "hello": "Salam"
+  "about": "About",
+  "intro": "Introduction",
+  "features": "Features",
+  "download": "Download"
 }
