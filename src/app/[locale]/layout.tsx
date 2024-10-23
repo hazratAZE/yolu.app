@@ -7,7 +7,6 @@ import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 
 // Diller için bir tür tanımla
-type Locale = "en" | "ru" | "tr" | "az"; // Geçerli diller burada listelenmeli
 
 const geistSans = localFont({
   src: "../fonts/GeistVF.woff",
@@ -33,18 +32,17 @@ export default async function RootLayout({
   params: { locale: string };
 }>) {
   // locale türünü Locale olarak belirtiyoruz
-  const typedLocale = locale as Locale;
 
   // Eğer geçerli bir locale değilse 404 sayfası
-  if (!routing.locales.includes(typedLocale)) {
+  if (!routing.locales.includes(locale as any)) {
     notFound();
   }
 
   // Mesajları getir
-  const messages = await getMessages({ locale: typedLocale });
+  const messages = await getMessages({ locale: locale });
 
   return (
-    <html lang={typedLocale}>
+    <html lang={locale}>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >

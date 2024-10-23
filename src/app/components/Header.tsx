@@ -8,7 +8,7 @@ import { useRouter } from "next/navigation";
 import { usePathname } from "next/navigation";
 
 // Dil türü belirliyoruz
-type Language = "AZ" | "EN" | "RU" | "TR";
+type Language = "az" | "en" | "ru" | "tr";
 
 const Header = () => {
   const t = useTranslations();
@@ -16,16 +16,21 @@ const Header = () => {
   const [activeSection, setActiveSection] = useState("intro");
   const [isMenuOpen, setIsMenuOpen] = useState(false); // Menü durumu
   const [isLangDropdownOpen, setIsLangDropdownOpen] = useState(false); // Dil dropdown durumu
-  const [selectedLanguage, setSelectedLanguage] = useState<Language>("AZ"); // Varsayılan dil
+  const [selectedLanguage, setSelectedLanguage] = useState<Language>("az"); // Varsayılan dil
   const pathname = usePathname(); // Aktif yol
   // Bayrak dosyaları eşlemesi
   const flagMap = {
-    AZ: "/icons/az-flag.svg",
-    EN: "/icons/uk-flag.svg",
-    TR: "/icons/tr-flag.svg",
-    RU: "/icons/ru-flag.svg",
+    az: "/icons/az-flag.svg",
+    en: "/icons/uk-flag.svg",
+    tr: "/icons/tr-flag.svg",
+    ru: "/icons/ru-flag.svg",
   };
-
+  useEffect(() => {
+    const savedLanguage = localStorage.getItem("selectedLanguage") as Language;
+    if (savedLanguage) {
+      setSelectedLanguage(savedLanguage);
+    }
+  }, []);
   const handleScroll = () => {
     const sections = document.querySelectorAll("section");
     const scrollPosition = window.scrollY + 100;
@@ -56,6 +61,7 @@ const Header = () => {
   const changeLanguage = (lang: Language) => {
     setSelectedLanguage(lang);
     setIsLangDropdownOpen(false);
+    localStorage.setItem("selectedLanguage", lang);
     console.log("Dil değişti:", lang);
     // Yeni path'i oluşturun: mevcut path'den son dil kodunu çıkarıp yenisini ekleyin
     const newPath = pathname.replace(
@@ -131,10 +137,10 @@ const Header = () => {
                 <ul className="absolute right-0 mt-2 bg-gray-700 text-white py-2 w-32 shadow-lg rounded">
                   <li
                     className="px-4 py-2 flex items-center hover:bg-gray-600 cursor-pointer"
-                    onClick={() => changeLanguage("AZ")}
+                    onClick={() => changeLanguage("az")}
                   >
                     <Image
-                      src={flagMap.AZ}
+                      src={flagMap.az}
                       alt="Azerbaijan Flag"
                       width={20}
                       height={20}
@@ -144,10 +150,10 @@ const Header = () => {
                   </li>
                   <li
                     className="px-4 py-2 flex items-center hover:bg-gray-600 cursor-pointer"
-                    onClick={() => changeLanguage("EN")}
+                    onClick={() => changeLanguage("en")}
                   >
                     <Image
-                      src={flagMap.EN}
+                      src={flagMap.en}
                       alt="UK Flag"
                       width={20}
                       height={20}
@@ -157,10 +163,10 @@ const Header = () => {
                   </li>
                   <li
                     className="px-4 py-2 flex items-center hover:bg-gray-600 cursor-pointer"
-                    onClick={() => changeLanguage("TR")}
+                    onClick={() => changeLanguage("tr")}
                   >
                     <Image
-                      src={flagMap.TR}
+                      src={flagMap.tr}
                       alt="Turkey Flag"
                       width={20}
                       height={20}
@@ -170,10 +176,10 @@ const Header = () => {
                   </li>
                   <li
                     className="px-4 py-2 flex items-center hover:bg-gray-600 cursor-pointer"
-                    onClick={() => changeLanguage("RU")}
+                    onClick={() => changeLanguage("ru")}
                   >
                     <Image
-                      src={flagMap.RU}
+                      src={flagMap.ru}
                       alt="Russia Flag"
                       width={20}
                       height={20}
@@ -262,10 +268,10 @@ const Header = () => {
               <ul className="absolute right-0 mt-2 bg-gray-700 text-white py-2 w-32 shadow-lg rounded">
                 <li
                   className="px-4 py-2 flex items-center hover:bg-gray-600 cursor-pointer"
-                  onClick={() => changeLanguage("AZ")}
+                  onClick={() => changeLanguage("az")}
                 >
                   <Image
-                    src={flagMap.AZ}
+                    src={flagMap.az}
                     alt="Azerbaijan Flag"
                     width={20}
                     height={20}
@@ -275,10 +281,10 @@ const Header = () => {
                 </li>
                 <li
                   className="px-4 py-2 flex items-center hover:bg-gray-600 cursor-pointer"
-                  onClick={() => changeLanguage("EN")}
+                  onClick={() => changeLanguage("en")}
                 >
                   <Image
-                    src={flagMap.EN}
+                    src={flagMap.en}
                     alt="UK Flag"
                     width={20}
                     height={20}
@@ -288,10 +294,10 @@ const Header = () => {
                 </li>
                 <li
                   className="px-4 py-2 flex items-center hover:bg-gray-600 cursor-pointer"
-                  onClick={() => changeLanguage("TR")}
+                  onClick={() => changeLanguage("tr")}
                 >
                   <Image
-                    src={flagMap.TR}
+                    src={flagMap.tr}
                     alt="Turkey Flag"
                     width={20}
                     height={20}
@@ -301,10 +307,10 @@ const Header = () => {
                 </li>
                 <li
                   className="px-4 py-2 flex items-center hover:bg-gray-600 cursor-pointer"
-                  onClick={() => changeLanguage("RU")}
+                  onClick={() => changeLanguage("ru")}
                 >
                   <Image
-                    src={flagMap.RU}
+                    src={flagMap.ru}
                     alt="Russia Flag"
                     width={20}
                     height={20}
