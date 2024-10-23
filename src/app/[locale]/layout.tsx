@@ -6,6 +6,9 @@ import { getMessages } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 
+// Diller için bir tür tanımla
+type Locale = "en" | "ru" | "tr" | "az"; // Geçerli diller burada listelenmeli
+
 const geistSans = localFont({
   src: "../fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -29,16 +32,19 @@ export default async function RootLayout({
   children: React.ReactNode;
   params: { locale: string };
 }>) {
-  if (!routing.locales.includes(locale as any)) {
+  // locale türünü Locale olarak belirtiyoruz
+  const typedLocale = locale as Locale;
+
+  // Eğer geçerli bir locale değilse 404 sayfası
+  if (!routing.locales.includes(typedLocale)) {
     notFound();
   }
 
-  // Providing all messages to the client
-  // side is the easiest way to get started
-  const messages = await getMessages();
+  // Mesajları getir
+  const messages = await getMessages({ locale: typedLocale });
 
   return (
-    <html lang={locale}>
+    <html lang={typedLocale}>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
