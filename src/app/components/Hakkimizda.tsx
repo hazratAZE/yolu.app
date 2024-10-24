@@ -27,7 +27,8 @@ const Hakkımızda = () => {
               className="w-12 h-12 mr-4"
             />
             <p className="text-black text-lg font-semibold">
-              Müştəri Məmnuniyyəti
+              {" "}
+              {t("customer_satisfaction")}
             </p>
           </div>
           <div className="flex items-center text-left p-4 bg-gray-100 rounded-lg">
@@ -36,7 +37,9 @@ const Hakkımızda = () => {
               alt="İnovasiya"
               className="w-12 h-12 mr-4"
             />
-            <p className="text-black text-lg font-semibold">İnovasiya</p>
+            <p className="text-black text-lg font-semibold">
+              {t("innovation")}
+            </p>
           </div>
           <div className="flex items-center text-left p-4 bg-gray-100 rounded-lg">
             <img
@@ -45,7 +48,7 @@ const Hakkımızda = () => {
               className="w-12 h-12 mr-4"
             />
             <p className="text-black text-lg font-semibold">
-              Etika və Şəffaflıq
+              {t("ethics_transparency")}
             </p>
           </div>
           <div className="flex items-center text-left p-4 bg-gray-100 rounded-lg">
@@ -55,7 +58,7 @@ const Hakkımızda = () => {
               className="w-12 h-12 mr-4"
             />
             <p className="text-black text-lg font-semibold">
-              Komanda İşbirliyi
+              {t("team_collaboration")}
             </p>
           </div>
         </div>
@@ -64,12 +67,9 @@ const Hakkımızda = () => {
       <div className="flex flex-col md:flex-row mb-8">
         <div className="md:w-1/2 p-4">
           <h2 className="text-2xl font-semibold mb-2 text-blue-800">
-            Vizyonumuz
+            {t("our_vision")}
           </h2>
-          <p className="mx-auto text-gray-800 mb-4">
-            İş dünyasında lider olmağı, müştərilərimizin gözləntilərini aşmağı
-            və karyera inkişafında inqilab etməyi hədəfləyirik.
-          </p>
+          <p className="mx-auto text-gray-800 mb-4">{t("vision_desc")}</p>
           <img
             src="/images/mission.jpg" // Vizyon resminin yolu
             alt="Vizyonumuz"
@@ -78,13 +78,9 @@ const Hakkımızda = () => {
         </div>
         <div className="md:w-1/2 p-4">
           <h2 className="text-2xl font-semibold mb-2 text-blue-800">
-            Missiyamız
+            {t("mission")}
           </h2>
-          <p className="mx-auto text-gray-800 mb-4">
-            İstifadəçilərimizə iş tapma, karyera inkişafı və iş elanları vermə
-            sahəsində mükəmməl xidmətlər təqdim edərək onlara yeni fürsətlər
-            yaratmaq.
-          </p>
+          <p className="mx-auto text-gray-800 mb-4">{t("mission_desc")}</p>
           <img
             src="/images/worker.jpg" // Missiya resminin yolu
             alt="Missiyamız"
@@ -98,7 +94,7 @@ const Hakkımızda = () => {
         onClick={scrollToContact}
         className="bg-white text-black rounded-full font-semibold hover:bg-gray-200 transition duration-300 px-8 py-4"
       >
-        Bizimlə Əlaqə
+        {t("contact_us")}
       </button>
     </section>
   );
