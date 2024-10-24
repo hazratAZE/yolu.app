@@ -33,7 +33,7 @@ const Ozellikler = () => {
   return (
     <section
       id="features"
-      className="bg-gray-100 min-h-screen flex flex-col justify-center pt-16"
+      className="bg-gray-100 min-h-screen flex flex-col justify-center pt-16 px-4"
     >
       <div className="container mx-auto px-4">
         <h1 className="text-center text-black font-bold">{t("features")}</h1>

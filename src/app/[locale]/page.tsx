@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div className="min-h-screen flex flex-col bg-gray-100">
       <Header /> {/* Header'ı ekle */}
-      <main className="flex flex-col items-center justify-center p-8">
+      <main className="flex flex-col items-center justify-center">
         <Intro /> {/* Intro bileşeni */}
         <Hakkimizda /> {/* Hakkımızda bileşeni */}
         <Ozellikler /> {/* Özellikler bileşeni */}
