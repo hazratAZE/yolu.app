@@ -5,7 +5,7 @@ const Intro = () => {
   return (
     <section
       id="intro"
-      className="relative bg-gray-100 min-h-screen flex items-center bg-cover bg-center w-full px-8"
+      className="relative bg-gray-100 min-h-screen flex items-center bg-cover bg-center w-full md:px-16 px-2"
       style={{ backgroundImage: "url('/images/phone.jpg')" }} // Arka plan resmi
     >
       {/* Siyah Opak Katman */}
