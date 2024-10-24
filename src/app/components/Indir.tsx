@@ -56,19 +56,19 @@ const Indir = () => {
       <h1 className="text-black font-bold mb-4">{t("download")}</h1>
 
       {/* Flexbox kullanarak resim ve metin düzeni */}
-      <div className="flex flex-col md:flex-row items-stretch justify-center gap-6 w-full max-w-screen-lg">
+      <div className="flex flex-col md:flex-row items-stretch justify-center w-full">
         {/* Paragraf Sol Taraf */}
-        <div className="md:w-1/2 flex items-center bg-white p-6  overflow-hidden">
-          <p className="text-gray-800 text-sm font-md text-left mb-0 py-1">
+        <div className="md:w-3/5 flex items-center bg-gray-800 p-6  overflow-hidden">
+          <p className="text-white text-[16px] font-light text-left mb-0 px-4">
             {t("explore_features")}
           </p>
         </div>
         {/* Resim Sağ Taraf */}
-        <div className="md:w-1/2 flex items-center">
+        <div className="md:w-2/5 flex items-center">
           <img
             src="/images/screen.png" // Resmin yolu (kendi resminizi buraya koyun)
             alt="Uygulama İndirme"
-            className="w-full h-[400px] object-cover" // Resim boyutunu ayarlayın
+            className="w-full h-[420px] object-cover" // Resim boyutunu ayarlayın
           />
         </div>
       </div>
