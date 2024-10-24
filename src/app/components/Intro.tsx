@@ -9,7 +9,7 @@ const Intro = () => {
       style={{ backgroundImage: "url('/images/phone.jpg')" }} // Arka plan resmi
     >
       {/* Siyah Opak Katman */}
-      <div className="absolute inset-0 bg-black opacity-55 z-10"></div>
+      <div className="absolute inset-0 bg-black opacity-50 z-10"></div>
 
       {/* İçerik */}
       <div className="container mx-auto flex flex-col md:flex-row items-center px-4 relative z-20">
