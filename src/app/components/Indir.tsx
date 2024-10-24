@@ -59,7 +59,7 @@ const Indir = () => {
       <div className="flex flex-col md:flex-row items-stretch justify-center w-full">
         {/* Paragraf Sol Taraf */}
         <div className="md:w-3/5 flex items-center bg-gray-800 p-6  overflow-hidden">
-          <p className="text-white text-[16px] font-light text-left mb-0 px-4">
+          <p className="text-white text-[16px] font-light text-left mb-0 md:px-4">
             {t("explore_features")}
           </p>
         </div>
