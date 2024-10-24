@@ -17,7 +17,7 @@ const Footer = () => {
             <img
               src="/icons/linkedin.svg"
               alt="Linkedin"
-              className="w-10 h-10 hover:opacity-80 transition-opacity"
+              className="w-6 h-6 hover:opacity-80 transition-opacity"
             />
           </a>
           <a
@@ -29,7 +29,7 @@ const Footer = () => {
             <img
               src="/icons/facebook.svg"
               alt="Facebook"
-              className="w-10 h-10 hover:opacity-80 transition-opacity"
+              className="w-6 h-6 hover:opacity-80 transition-opacity"
             />
           </a>
           <a
@@ -41,7 +41,7 @@ const Footer = () => {
             <img
               src="/icons/instagram.svg"
               alt="Instagram"
-              className="w-10 h-10 hover:opacity-80 transition-opacity"
+              className="w-6 h-6 hover:opacity-80 transition-opacity"
             />
           </a>
           <a
@@ -53,7 +53,7 @@ const Footer = () => {
             <img
               src="/icons/tiktok.svg"
               alt="TikTok"
-              className="w-10 h-10 hover:opacity-80 transition-opacity"
+              className="w-6 h-6 hover:opacity-80 transition-opacity"
             />
           </a>
           <a
@@ -65,7 +65,7 @@ const Footer = () => {
             <img
               src="/icons/x.svg"
               alt="Twitter"
-              className="w-10 h-10 hover:opacity-80 transition-opacity"
+              className="w-6 h-6 hover:opacity-80 transition-opacity"
             />
           </a>
         </div>
