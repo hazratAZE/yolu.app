@@ -14,7 +14,7 @@ const Hakkımızda = () => {
       className="min-h-screen flex flex-col items-center justify-center pt-16 px-4"
     >
       <h1 className="font-bold mb-4 text-black">{t("about")}</h1>
-      <p className="text-center mb-16 text-gray-600 w-[80%]">
+      <p className="text-center mb-16 text-gray-600 md:w-[80%]">
         {t("about_desc")}
       </p>
       <div className="flex flex-col mb-20">

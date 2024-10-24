@@ -38,7 +38,7 @@ const Ozellikler = () => {
       <div className="container mx-auto">
         <h1 className="text-center text-black font-bold">{t("features")}</h1>
         <div className="text-center justify-center flex mt-4">
-          <p className="text-gray-600 mb-8 w-[80%]">
+          <p className="text-gray-600 mb-8 md:w-[80%]">
             {t("unique_features_desc")}
           </p>
         </div>

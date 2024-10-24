@@ -4,19 +4,16 @@ import Image from "next/image";
 const Intro = () => {
   const t = useTranslations();
   return (
-    <section
-      id="intro"
-      className="bg-gray-100 min-h-screen flex items-center px-4"
-    >
-      <div className="container mx-auto px-4 flex flex-col md:flex-row items-center">
+    <section id="intro" className="bg-gray-100 min-h-screen flex items-center">
+      <div className="container mx-auto  flex flex-col md:flex-row items-center">
         {/* Mobilde Yukarıda Olacak Görsel */}
-        <div className="md:w-1/2 flex justify-center order-1 md:order-2 mb-2 md:mb-0">
+        <div className="md:w-1/2 flex justify-end order-1 md:order-2 mb-4 md:mb-0">
           <Image
             src="/icons/workers.svg"
             alt="Uygulama Ekran Görüntüsü"
             width={420}
-            height={420}
-            className="object-contain w-[260px] h-[220px] md:w-[440px] md:h-[420px]" // Tailwind sınıflarıyla boyutlandırma
+            height={440}
+            className="object-contain w-[300px] h-[220px] md:w-[440px] md:h-[420px]" // Tailwind sınıflarıyla boyutlandırma
           />
         </div>
 
