@@ -2,6 +2,7 @@
   "about": "Hakkında",
   "intro": "Giriş",
   "features": "Özellikler",
+  "unique_features_desc": "Yolu platformunun sunduğu daha fazla benzersiz özelliği kullanmak ve iş dünyasında rakiplerinizden bir adım önde olmak için bize katılın!",
   "download": "İndir",
   "welcome": "Yolu'ya Hoş Geldiniz!",
   "welcome_desc": "Yolu, iş arama ve kariyer geliştirme ile ilgili yenilikçi çözümler sunar. Yolu ile iş bulmak, iş ilanı vermek ve kariyerinizde yeni fırsatlar keşfetmek daha kolaydır.",
@@ -16,5 +17,11 @@
   "vision_desc": "İş dünyasında lider olmayı, müşterilerimizin beklentilerini aşmayı ve kariyer gelişiminde devrim yapmayı hedefliyoruz.",
   "service_desc": "Kullanıcılarımıza iş bulma, kariyer geliştirme ve iş ilanları verme konularında mükemmel hizmetler sunarak onlara yeni fırsatlar yaratıyoruz.",
   "contact_us": "Bizimle İletişime Geçin",
-  "innovation": "İnovasyon"
+  "innovation": "İnovasyon",
+  "map_feature_desc": "Harita üzerinde iş ilanlarını ve diğer kullanıcıları kolayca bulun. İş bulmak veya ilanınızı öne çıkarmak, zaman kazandırarak işlemlerinizi kolaylaştırır.",
+  "qr_apply_feature_desc": "QR başvuru özelliği ile işlere hızlı ve kolay başvurun. CV hazırlamakla vakit kaybetmeden sadece QR kodu ile başvuru yaparak iş bulma sürecinizi hızlandırın.",
+  "virtual_card_feature_desc": "Yolu sanal kartı ile token hesabınızı kolayca yönetin. Ödemelerden çeşitli işlemlere kadar Yolu platformunun tüm işlevlerinden yararlanmak için sanal kart alın.",
+  "token_feature_desc": "Yolu uygulaması içinde kullanılan bir token'e sahip olun. İş başvurularında, ödemelerde ve diğer işlemlerde bu token ile işlemlerinizi hızlandırın.",
+  "earn_token_feature_desc": "Tokenlerinizi istediğiniz zaman satarak gerçek paraya çevirme imkanı. Tokenlerinizin değerini artırmak ve nakit eşdeğerine dönüştürmek için basit ve kullanışlı bir yol sunuyoruz.",
+  "partner_feature_desc": "Bizimle ortak olarak satışlarınızı artırın ve daha fazla kazanın. İş fırsatlarınızı genişletmek ve yeni müşterilere ulaşmak için iş ortaklarımızla iş birliği yaparak gelirlerinizi artırın."
 }

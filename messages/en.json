@@ -2,6 +2,7 @@
   "about": "About",
   "intro": "Introduction",
   "features": "Features",
+  "unique_features_desc": "Join us to benefit from the unique features Yolu platform offers and stay one step ahead of your competitors in the business world!",
   "download": "Download",
   "welcome": "Welcome to Yolu!",
   "welcome_desc": "Yolu offers innovative solutions for job searching and career development. With Yolu, it's easier to find jobs, post job listings, and discover new career opportunities.",
@@ -16,5 +17,11 @@
   "vision_desc": "We aim to be leaders in the business world, exceeding our customers' expectations and revolutionizing career development.",
   "service_desc": "We provide excellent services in job searching, career development, and job listings, creating new opportunities for our users.",
   "contact_us": "Contact Us",
-  "innovation": "Innovation"
+  "innovation": "Innovation",
+  "map_feature_desc": "Find both job postings and other users easily with the map view feature. This allows you to highlight your job posts or quickly find a job, saving you time and making your tasks easier.",
+  "qr_apply_feature_desc": "Apply for jobs quickly and conveniently with the QR apply feature. Skip the hassle of preparing a CV and apply with just a QR code, speeding up your job search process.",
+  "virtual_card_feature_desc": "Easily manage your token account with the Yolu virtual card. Get a virtual card to access all the features of the Yolu platform, from payments to various transactions.",
+  "token_feature_desc": "Own a token that can be used for all transactions within the Yolu app. Speed up your processes with the functionality of this token in job applications, payments, and other operations.",
+  "earn_token_feature_desc": "Sell your tokens at any time and convert them into real money. We offer a simple and convenient way to increase the value of your tokens and turn them into cash equivalents.",
+  "partner_feature_desc": "Increase your sales and earn more by partnering with us. Collaborate with our partners to expand your business opportunities, reach new customers, and grow your revenue."
 }

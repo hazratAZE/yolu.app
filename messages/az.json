@@ -2,6 +2,7 @@
   "about": "Haqqında",
   "intro": "Giriş",
   "features": "Xüsusiyyətlər",
+  "unique_features_desc": "Yolu platformasının təqdim etdiyi daha çox unikal xüsusiyyətlərdən faydalanmaq və iş dünyasında rəqiblərinizdən bir addım öndə olmaq üçün bizə qoşulun!",
   "download": "Yüklə",
   "welcome": "Yolu’ya Xoş Gəldiniz!",
   "welcome_desc": "Yolu, iş axtarışı və karyera inkişafı ilə bağlı yenilikçi həllər təqdim edir. Yolu ilə iş tapmaq, iş elanları vermək və karyeranızda yeni fürsətlər kəşf etmək daha asandır.",
@@ -16,5 +17,11 @@
   "vision_desc": "İş dünyasında lider olmağı, müştərilərimizin gözləntilərini aşmağı və karyera inkişafında inqilab etməyi hədəfləyirik.",
   "service_desc": "İstifadəçilərimizə iş tapma, karyera inkişafı və iş elanları vermə sahəsində mükəmməl xidmətlər təqdim edərək onlara yeni fürsətlər yaratmaq.",
   "contact_us": "Bizimlə Əlaqə",
-  "innovation": "İnnovasiya"
+  "innovation": "İnnovasiya",
+  "map_feature_desc": "Xəritə üzərində iş elanlarını və digər istifadəçiləri asanlıqla tapın. İş tapmaq və ya elanınızı önə çıxarmaq, işlərinizi asanlaşdıraraq sizə zaman qazandıracaq.",
+  "qr_apply_feature_desc": "QR müraciət xüsusiyyəti ilə işlərə tez və asanlıqla müraciət edin. CV hazırlamaqla vaxt itirmədən sadəcə QR kodu ilə müraciət edərək iş tapma prosesinizi sürətləndirin.",
+  "virtual_card_feature_desc": "Yolu virtual kartı ilə token hesabınızı asanlıqla idarə edin. Virtual kart əldə edərək Yolu platformasının bütün funksiyalarından faydalanın.",
+  "token_feature_desc": "Yolu tətbiqi daxilində istifadə olunan token ilə bütün əməliyyatlarda rahatlıqla istifadə edə biləcəyiniz bir tokenə sahib olun. İş müraciətləri, ödənişlər və digər əməliyyatlarda bu tokenin funksionallığı ilə işlərinizi sürətləndirin.",
+  "earn_token_feature_desc": "Tokenlərinizi istənilən vaxt sataraq real pula çevirmək imkanı. Tokenlərinizin dəyərini artırmaq və onları pul ekvivalentinə çevirmək üçün sadə və rahat bir yol təklif edirik.",
+  "partner_feature_desc": "Bizimlə tərəfdaş olaraq satışlarınızı artırın və daha çox qazanın. İş imkanlarınızı genişləndirmək və yeni müştərilərə çatmaq üçün partnyorlarımızla əməkdaşlıq edərək gəlirlərinizi artırın."
 }
