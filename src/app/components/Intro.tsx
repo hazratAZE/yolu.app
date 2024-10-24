@@ -5,7 +5,7 @@ const Intro = () => {
   const t = useTranslations();
   return (
     <section id="intro" className="bg-gray-100 min-h-screen flex items-center">
-      <div className="container mx-auto  flex flex-col md:flex-row items-center">
+      <div className="container mx-auto  flex flex-col md:flex-row items-center px-4">
         {/* Mobilde Yukarıda Olacak Görsel */}
         <div className="md:w-1/2 flex justify-end order-1 md:order-2 mb-4 md:mb-0">
           <Image
