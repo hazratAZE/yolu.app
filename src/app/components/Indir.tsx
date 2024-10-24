@@ -76,14 +76,14 @@ const Indir = () => {
       <div className="flex flex-col md:flex-row gap-6 w-full max-w-screen-lg mt-24 px-4">
         <div className="relative w-full md:w-3/4">
           <a
-            className="flex justify-center items-center gap-4 bg-white text-black px-10 py-8 rounded-full font-bold hover:bg-blue-100 transition-all"
+            className="flex justify-center items-center gap-4 bg-gray-800 text-white px-10 py-6 rounded-full font-bold hover:bg-gray-600 transition-all"
             aria-label="iOS üçün yükləyin"
             onClick={handleIOSClick}
           >
             <img
               src="/icons/ios.svg" // Dışardan iOS ikon SVG dosyası
               alt="iOS icon"
-              className="w-10 h-10" // İkonun boyutlarını artırdım
+              className="w-12 h-12" // İkonun boyutlarını artırdım
             />
             <span className="downloadText">{t("download_ios")}</span>
           </a>
@@ -91,7 +91,7 @@ const Indir = () => {
 
         <a
           href="https://play.google.com/store/apps/details?id=com.yolu.app"
-          className="w-full md:w-3/4 flex justify-center items-center gap-4 bg-white text-black px-10 py-8 rounded-full  font-bold hover:bg-blue-100 transition-all"
+          className="w-full md:w-3/4 flex justify-center items-center gap-4 bg-gray-800 text-white px-10 py-6 rounded-full  font-bold hover:bg-gray-600 transition-all"
           aria-label="Android üçün yükləyin"
           target="_blank" // Yeni sekmede açmak için ekle
           rel="noopener noreferrer"
@@ -99,7 +99,7 @@ const Indir = () => {
           <img
             src="/icons/android.svg" // Dışardan Android ikon SVG dosyası
             alt="Android icon"
-            className="w-10 h-10" // İkonun boyutlarını artırdım
+            className="w-12 h-12" // İkonun boyutlarını artırdım
           />
           <span className="downloadText">{t("download_android")}</span>
         </a>
