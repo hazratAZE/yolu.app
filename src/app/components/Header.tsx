@@ -74,8 +74,8 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-gray-800 text-white p-4 fixed w-full z-10">
-      <div className="container mx-auto flex justify-between items-center">
+    <header className="bg-gray-800 text-white p-4 fixed w-full z-50 opacity-95">
+      <div className="container mx-auto flex justify-between items-center ">
         {/* Yolu ikonu, en solda sabit */}
         <div className="header-icon flex items-center" onClick={refreshPage}>
           <Image src="/icons/yolu.svg" alt="Yolu Icon" width={46} height={46} />

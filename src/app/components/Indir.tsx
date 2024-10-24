@@ -76,7 +76,7 @@ const Indir = () => {
       <div className="flex flex-col md:flex-row gap-6 w-full max-w-screen-lg mt-24 px-4">
         <div className="relative w-full md:w-3/4">
           <a
-            className="flex justify-center items-center gap-4 bg-gray-800 text-white px-10 py-6 rounded-full font-bold hover:bg-gray-600 transition-all"
+            className="flex justify-center items-center gap-4 bg-gray-800 text-white px-10 py-6 rounded-full font-bold hover:bg-gray-900 transition-all"
             aria-label="iOS üçün yükləyin"
             onClick={handleIOSClick}
           >
@@ -91,7 +91,7 @@ const Indir = () => {
 
         <a
           href="https://play.google.com/store/apps/details?id=com.yolu.app"
-          className="w-full md:w-3/4 flex justify-center items-center gap-4 bg-gray-800 text-white px-10 py-6 rounded-full  font-bold hover:bg-gray-600 transition-all"
+          className="w-full md:w-3/4 flex justify-center items-center gap-4 bg-gray-800 text-white px-10 py-6 rounded-full  font-bold hover:bg-gray-900 transition-all"
           aria-label="Android üçün yükləyin"
           target="_blank" // Yeni sekmede açmak için ekle
           rel="noopener noreferrer"

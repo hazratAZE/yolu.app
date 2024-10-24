@@ -90,7 +90,7 @@ const Hakkımızda = () => {
       {/* İletişim Butonu */}
       <button
         onClick={scrollToContact}
-        className="bg-gray-800 text-blue-400 rounded-full font-semibold hover:bg-gray-200 transition duration-300 px-8 py-4"
+        className="bg-gray-800 text-white rounded-full font-semibold hover:bg-gray-900 transition duration-300 px-8 py-4"
       >
         {t("contact_us")}
       </button>
