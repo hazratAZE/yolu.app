@@ -65,7 +65,7 @@ const Hakkımızda = () => {
       </div>
       {/* Vizyon ve Missiya Bölümü */}
       <div className="flex flex-col md:flex-row mb-8">
-        <div className="md:w-1/2 p-4">
+        <div className="md:w-1/2 p-2">
           <h2 className="text-2xl font-semibold mb-2 text-blue-800">
             {t("our_vision")}
           </h2>
@@ -76,7 +76,7 @@ const Hakkımızda = () => {
             className="w-full h-80 object-cover mb-2 rounded-lg"
           />
         </div>
-        <div className="md:w-1/2 p-4">
+        <div className="md:w-1/2 p-2">
           <h2 className="text-2xl font-semibold mb-2 text-blue-800">
             {t("mission")}
           </h2>
