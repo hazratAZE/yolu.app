@@ -23,5 +23,13 @@
   "virtual_card_feature_desc": "Yolu sanal kartı ile token hesabınızı kolayca yönetin. Ödemelerden çeşitli işlemlere kadar Yolu platformunun tüm işlevlerinden yararlanmak için sanal kart alın.",
   "token_feature_desc": "Yolu uygulaması içinde kullanılan bir token'e sahip olun. İş başvurularında, ödemelerde ve diğer işlemlerde bu token ile işlemlerinizi hızlandırın.",
   "earn_token_feature_desc": "Tokenlerinizi istediğiniz zaman satarak gerçek paraya çevirme imkanı. Tokenlerinizin değerini artırmak ve nakit eşdeğerine dönüştürmek için basit ve kullanışlı bir yol sunuyoruz.",
-  "partner_feature_desc": "Bizimle ortak olarak satışlarınızı artırın ve daha fazla kazanın. İş fırsatlarınızı genişletmek ve yeni müşterilere ulaşmak için iş ortaklarımızla iş birliği yaparak gelirlerinizi artırın."
+  "partner_feature_desc": "Bizimle ortak olarak satışlarınızı artırın ve daha fazla kazanın. İş fırsatlarınızı genişletmek ve yeni müşterilere ulaşmak için iş ortaklarımızla iş birliği yaparak gelirlerinizi artırın.",
+  "download_ios": "iOS için İndir",
+  "download_android": "Android için İndir",
+  "rights_reserved": "Yolu. Tüm hakları saklıdır.",
+  "explore_features": "Uygulamamızın öne çıkan özelliklerini keşfedin! İstediğiniz zaman, istediğiniz yerden cazip teklifler almak için hemen indirin. Sizin için tasarlanmış mükemmel bir uygulama ile tüm fırsatlardan yararlanın. Bu uygulama, günlük hayatınızı kolaylaştıracak birçok özellik sunmaktadır. Uygulamamızın en dikkat çeken özelliklerinden biri, kullanıcılara özel teklifler ve indirimler sunmasıdır. Uygulama aracılığıyla, kendinize uygun teklifleri kolayca keşfedebilir ve günlük harcamalarınızı minimuma indirebilirsiniz. Sizi ilgilendiren sektörlerde, özellikle alışveriş, hizmetler ve eğlence alanlarında birçok imkanla karşılaşacaksınız. Aynı zamanda, uygulamamızın sezgisel tasarımı, kullanıcılara rahat bir deneyim sunmaktadır. Her yaştan insanın rahatlıkla kullanabileceği bir arayüze sahiptir. İstediğiniz zaman, istediğiniz yerden cazip teklifler almak için uygulamayı indirmeniz, sadece alışveriş deneyiminizi değil, aynı zamanda yaşam tarzınızı da yeni bir yöne taşıyacaktır.",
+  "close": "Kapat",
+  "ios_warn": "Uygulamamız şu anda iOS platformunda mevcut değil. Ancak, iOS kullanıcıları için mükemmel bir deneyim oluşturmak için çalışıyoruz. İlginiz için teşekkür ederiz, yakın zamanda iOS'da da bizimle olacaksınız!",
+  "email": "Email",
+  "phone": "Telefon"
 }

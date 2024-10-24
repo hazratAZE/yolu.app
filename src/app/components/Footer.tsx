@@ -1,10 +1,13 @@
+import { useTranslations } from "next-intl";
+
 // components/Footer.js
 const Footer = () => {
+  const t = useTranslations();
   return (
-    <footer className="text-black py-6 mt-20">
-      <div className="container mx-auto flex flex-col md:flex-row justify-between items-center mb-12">
+    <footer className="text-white py-6 mt-20 pt-20 bg-gray-800 w-full">
+      <div className="container mx-auto flex flex-col md:flex-row justify-center items-center mb-12">
         {/* Sosyal Medya İkonları */}
-        <div className="flex justify-center space-x-6 mb-4 md:mb-0">
+        <div className="flex justify-center space-x-6 mb-4 md:mb-0 sm:mb-12">
           <a
             href="https://www.linkedin.com/company/101312119/admin/feed/posts/?feedType=following"
             target="_blank"
@@ -14,7 +17,7 @@ const Footer = () => {
             <img
               src="/icons/linkedin.svg"
               alt="Linkedin"
-              className="w-8 h-8 hover:opacity-80 transition-opacity"
+              className="w-10 h-10 hover:opacity-80 transition-opacity"
             />
           </a>
           <a
@@ -26,7 +29,7 @@ const Footer = () => {
             <img
               src="/icons/facebook.svg"
               alt="Facebook"
-              className="w-8 h-8 hover:opacity-80 transition-opacity"
+              className="w-10 h-10 hover:opacity-80 transition-opacity"
             />
           </a>
           <a
@@ -38,7 +41,7 @@ const Footer = () => {
             <img
               src="/icons/instagram.svg"
               alt="Instagram"
-              className="w-8 h-8 hover:opacity-80 transition-opacity"
+              className="w-10 h-10 hover:opacity-80 transition-opacity"
             />
           </a>
           <a
@@ -50,7 +53,7 @@ const Footer = () => {
             <img
               src="/icons/tiktok.svg"
               alt="TikTok"
-              className="w-8 h-8 hover:opacity-80 transition-opacity"
+              className="w-10 h-10 hover:opacity-80 transition-opacity"
             />
           </a>
           <a
@@ -62,22 +65,22 @@ const Footer = () => {
             <img
               src="/icons/x.svg"
               alt="Twitter"
-              className="w-8 h-8 hover:opacity-80 transition-opacity"
+              className="w-10 h-10 hover:opacity-80 transition-opacity"
             />
           </a>
         </div>
 
         {/* İletişim Bilgileri */}
         <div className="text-center mb-4 md:mb-0 flex flex-col md:ml-12">
-          <p className="text-md">Email: info@yolu.app</p>
-          <p className="text-md">Telefon: +994 55 374 98 01</p>
+          <p className="text-md">{t("email")}: info@yolu.app</p>
+          <p className="text-md">{t("phone")}: +994 55 374 98 01</p>
         </div>
       </div>
 
       {/* Tüm Hakları Saklıdır */}
-      <div className="text-center mt-4">
+      <div className="text-center mt-4 text-gray-200">
         <p className="text-md">
-          © {new Date().getFullYear()} Yolu. Bütün hüquqlar qorunur
+          © {new Date().getFullYear()} {t("rights_reserved")}
         </p>
       </div>
     </footer>

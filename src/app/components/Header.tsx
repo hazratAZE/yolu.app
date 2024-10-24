@@ -120,7 +120,7 @@ const Header = () => {
             {/* Dil Dropdown */}
             <div className="relative">
               <button
-                className="flex items-center text-white focus:outline-none"
+                className="flex items-center text-white focus:outline-none mx-4"
                 onClick={() => setIsLangDropdownOpen(!isLangDropdownOpen)}
               >
                 {/* Seçilen dil ve bayrak */}
@@ -252,7 +252,7 @@ const Header = () => {
           {/* Dil Dropdown - Mobilde de mevcut */}
           <div className="relative">
             <button
-              className="flex items-center text-white focus:outline-none"
+              className="flex items-center text-white focus:outline-none mt-4"
               onClick={() => setIsLangDropdownOpen(!isLangDropdownOpen)}
             >
               {/* Seçilen dil ve bayrak mobilde de görünsün */}

@@ -23,5 +23,13 @@
   "virtual_card_feature_desc": "Yolu virtual kartı ilə token hesabınızı asanlıqla idarə edin. Virtual kart əldə edərək Yolu platformasının bütün funksiyalarından faydalanın.",
   "token_feature_desc": "Yolu tətbiqi daxilində istifadə olunan token ilə bütün əməliyyatlarda rahatlıqla istifadə edə biləcəyiniz bir tokenə sahib olun. İş müraciətləri, ödənişlər və digər əməliyyatlarda bu tokenin funksionallığı ilə işlərinizi sürətləndirin.",
   "earn_token_feature_desc": "Tokenlərinizi istənilən vaxt sataraq real pula çevirmək imkanı. Tokenlərinizin dəyərini artırmaq və onları pul ekvivalentinə çevirmək üçün sadə və rahat bir yol təklif edirik.",
-  "partner_feature_desc": "Bizimlə tərəfdaş olaraq satışlarınızı artırın və daha çox qazanın. İş imkanlarınızı genişləndirmək və yeni müştərilərə çatmaq üçün partnyorlarımızla əməkdaşlıq edərək gəlirlərinizi artırın."
+  "partner_feature_desc": "Bizimlə tərəfdaş olaraq satışlarınızı artırın və daha çox qazanın. İş imkanlarınızı genişləndirmək və yeni müştərilərə çatmaq üçün partnyorlarımızla əməkdaşlıq edərək gəlirlərinizi artırın.",
+  "download_ios": "iOS üçün Yükləyin",
+  "download_android": "Android üçün Yükləyin",
+  "rights_reserved": "Yolu. Bütün hüquqlar qorunur.",
+  "explore_features": "Uygulamamızın üstün xüsusiyyətlərini kəşf edin! İstədiyiniz zaman, istədiyiniz yerdə sərfəli təkliflərdən yararlanmaq üçün dərhal yükləyin. Sizin üçün yaradılmış mükəmməl bir tətbiq ilə bütün imkanlardan faydalanın. Bu tətbiq, gündəlik həyatınızı asanlaşdıracaq bir çox xüsusiyyət təqdim edir. Uygulamamızın ən diqqət çəkən xüsusiyyətlərindən biri, istifadəçilərə xüsusi təkliflər və endirimlər təqdim etməsidir. Tətbiq vasitəsilə, özünüzə uyğun olan təklifləri rahatlıqla kəşf edə və gündəlik xərclərinizi minimuma endirə bilərsiniz. Sizi maraqlandıran sektorlarda, xüsusilə alış-veriş, xidmətlər və əyləncə sahələrində, bir çox imkanla qarşılacaqsınız. Eyni zamanda, intuitiv dizaynı ilə tətbiqimiz, istifadəçilərə rahat bir təcrübə təmin edir. Hər yaşda insanın rahatlıqla istifadə edə biləcəyi bir arayüzə sahibdir. İstədiyiniz zaman, istədiyiniz yerdə sərfəli təkliflərdən yararlanmaq üçün tətbiqi yükləmək sizə yalnız alış-verişdə deyil, həm də həyat tərzinizdə yeni bir dönüş yaratma imkanı verəcək.",
+  "close": "Bağla",
+  "ios_warn": "Tətbiqimiz iOS platformasında hələlik mövcud deyil. Lakin, iOS istifadəçiləri üçün mükəmməl bir təcrübə yaratmaq üzərində çalışırıq. Dikkatiniz üçün təşəkkür edirik, yaxın zamanda iOS-da da bizimlə olacaqsınız!",
+  "email": "Email",
+  "phone": "Telefon"
 }

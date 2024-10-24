@@ -44,6 +44,9 @@ p {
   padding: 20px 100px; /* Mobilde buton boyutunu küçült */
   font-size: 1.25rem; /* Mobilde buton metni boyutu */
 }
+.downloadText {
+  font-size: 1.5rem;
+}
 /* Mobil cihazlar için düzen */
 @media (max-width: 768px) {
   nav a {
@@ -68,6 +71,9 @@ p {
   .downloadButton {
     padding: 15px 60px; /* Mobilde buton boyutunu küçült */
     font-size: 1rem; /* Mobilde buton metni boyutu */
+  }
+  .downloadText {
+    font-size: 1rem;
   }
   /* Bars ikonu ve kapatma işareti */
   .menu-toggle {
