@@ -7,11 +7,11 @@ const Footer = () => {
     <footer className="text-white py-6 mt-20 pt-20 bg-gray-800 w-full">
       <div className="container mx-auto flex flex-col md:flex-row justify-center items-center mb-12">
         {/* Sosyal Medya İkonları */}
-        <div className="text-center flex flex-col md:ml-12 mb-4 md:mb-0 sm:mb-8">
+        <div className="text-center flex flex-col mb-4 md:mb-0 sm:mb-8">
           <p className="text-md">{t("email")}: info@yolu.app</p>
           <p className="text-md">{t("phone")}: +994 55 374 98 01</p>
         </div>
-        <div className="flex justify-center space-x-6 ">
+        <div className="flex justify-center space-x-6 md:ml-12 ">
           <a
             href="https://www.linkedin.com/company/101312119/admin/feed/posts/?feedType=following"
             target="_blank"
