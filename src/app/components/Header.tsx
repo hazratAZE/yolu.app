@@ -74,44 +74,48 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-gray-800 text-white p-4 fixed w-full z-50 opacity-95">
+    <header className="bg-black text-white p-4 fixed w-full z-50 opacity-95">
       <div className="container mx-auto flex justify-between items-center ">
         {/* Yolu ikonu, en solda sabit */}
-        <div className="header-icon flex items-center" onClick={refreshPage}>
+        <div
+          className="header-icon flex items-center"
+          onClick={refreshPage}
+          style={{ cursor: "pointer" }}
+        >
           <Image src="/icons/yolu.svg" alt="Yolu Icon" width={46} height={46} />
         </div>
 
         {/* Masaüstü Menüsü ve Dil Dropdown */}
         <div className="flex items-center ml-auto space-x-4 max-w-[50%] w-full justify-end">
-          <nav className="hidden md:flex space-x-4">
+          <nav className="hidden md:flex space-x-4 text-gray-300">
             <Link
               href="#intro"
-              className={`relative hover:text-blue-400 ${
-                activeSection === "intro" ? "text-blue-400 font-bold" : ""
+              className={`relative text-sm  hover:text-white ${
+                activeSection === "intro" ? "text-white font-bold" : ""
               }`}
             >
               {t("intro")}
             </Link>
             <Link
               href="#about"
-              className={`relative hover:text-blue-400 ${
-                activeSection === "about" ? "text-blue-400 font-bold" : ""
+              className={`relative text-sm hover:text-white ${
+                activeSection === "about" ? "text-white font-bold" : ""
               }`}
             >
               {t("about")}
             </Link>
             <Link
               href="#features"
-              className={`relative hover:text-blue-400 ${
-                activeSection === "features" ? "text-blue-400 font-bold" : ""
+              className={`relative text-sm hover:text-white ${
+                activeSection === "features" ? "text-white font-bold" : ""
               }`}
             >
               {t("features")}
             </Link>
             <Link
               href="#download"
-              className={`relative hover:text-blue-400 ${
-                activeSection === "download" ? "text-blue-400 font-bold" : ""
+              className={`relative text-sm hover:text-white ${
+                activeSection === "download" ? "text-white font-bold" : ""
               }`}
             >
               {t("download")}
@@ -120,70 +124,70 @@ const Header = () => {
             {/* Dil Dropdown */}
             <div className="relative">
               <button
-                className="flex items-center text-white focus:outline-none mx-4"
+                className="flex items-center text-sm text-gray-300 focus:outline-none mx-4"
                 onClick={() => setIsLangDropdownOpen(!isLangDropdownOpen)}
               >
                 {/* Seçilen dil ve bayrak */}
                 <Image
                   src={flagMap[selectedLanguage]}
                   alt={`${selectedLanguage.toUpperCase()} Flag`}
-                  width={20}
-                  height={20}
+                  width={17}
+                  height={17}
                   className="mr-2"
                 />
                 {selectedLanguage.toUpperCase()}{" "}
                 <span className="ml-2">&#9662;</span>
               </button>
               {isLangDropdownOpen && (
-                <ul className="absolute right-0 mt-2 bg-gray-700 text-white py-2 w-32 shadow-lg rounded">
+                <ul className="absolute right-0 mt-2 bg-gray-900 text-white py-2 w-32 shadow-lg rounded">
                   <li
-                    className="px-4 py-2 flex items-center hover:bg-gray-600 cursor-pointer"
+                    className="px-4 py-2 flex items-center hover:bg-gray-700 cursor-pointer text-sm"
                     onClick={() => changeLanguage("az")}
                   >
                     <Image
                       src={flagMap.az}
                       alt="Azerbaijan Flag"
-                      width={20}
-                      height={20}
+                      width={17}
+                      height={17}
                       className="mr-2"
                     />
                     AZ
                   </li>
                   <li
-                    className="px-4 py-2 flex items-center hover:bg-gray-600 cursor-pointer"
+                    className="px-4 py-2 flex items-center hover:bg-gray-700 cursor-pointer text-sm"
                     onClick={() => changeLanguage("en")}
                   >
                     <Image
                       src={flagMap.en}
                       alt="UK Flag"
-                      width={20}
-                      height={20}
+                      width={17}
+                      height={17}
                       className="mr-2"
                     />
                     EN
                   </li>
                   <li
-                    className="px-4 py-2 flex items-center hover:bg-gray-600 cursor-pointer"
+                    className="px-4 py-2 flex items-center hover:bg-gray-700 cursor-pointer text-sm"
                     onClick={() => changeLanguage("tr")}
                   >
                     <Image
                       src={flagMap.tr}
                       alt="Turkey Flag"
-                      width={20}
-                      height={20}
+                      width={17}
+                      height={17}
                       className="mr-2"
                     />
                     TR
                   </li>
                   <li
-                    className="px-4 py-2 flex items-center hover:bg-gray-600 cursor-pointer"
+                    className="px-4 py-2 flex items-center hover:bg-gray-700 cursor-pointer text-sm"
                     onClick={() => changeLanguage("ru")}
                   >
                     <Image
                       src={flagMap.ru}
                       alt="Russia Flag"
-                      width={20}
-                      height={20}
+                      width={17}
+                      height={17}
                       className="mr-2"
                     />
                     RU
@@ -207,16 +211,14 @@ const Header = () => {
 
       {/* Dropdown Menü - Mobil İçin */}
       <nav
-        className={`md:hidden ${
-          isMenuOpen ? "block" : "hidden"
-        } bg-gray-800 p-4`}
+        className={`md:hidden ${isMenuOpen ? "block" : "hidden"} bg-black p-4`}
       >
-        <div className="flex flex-col items-center space-y-2">
+        <div className="flex flex-col items-center space-y-2 text-gray-300">
           <Link
             href="#intro"
             onClick={() => setIsMenuOpen(false)}
-            className={`relative hover:text-blue-400 ${
-              activeSection === "intro" ? "text-blue-400 font-bold" : ""
+            className={`relative text-sm hover:text-white ${
+              activeSection === "intro" ? "text-white font-bold" : ""
             }`}
           >
             {t("intro")}
@@ -224,8 +226,8 @@ const Header = () => {
           <Link
             href="#about"
             onClick={() => setIsMenuOpen(false)}
-            className={`relative hover:text-blue-400 ${
-              activeSection === "about" ? "text-blue-400 font-bold" : ""
+            className={`relative text-sm hover:text-white ${
+              activeSection === "about" ? "text-white font-bold" : ""
             }`}
           >
             {t("about")}
@@ -233,8 +235,8 @@ const Header = () => {
           <Link
             href="#features"
             onClick={() => setIsMenuOpen(false)}
-            className={`relative hover:text-blue-400 ${
-              activeSection === "features" ? "text-blue-400 font-bold" : ""
+            className={`relative text-sm hover:text-white ${
+              activeSection === "features" ? "text-white font-bold" : ""
             }`}
           >
             {t("features")}
@@ -242,8 +244,8 @@ const Header = () => {
           <Link
             href="#download"
             onClick={() => setIsMenuOpen(false)}
-            className={`relative hover:text-blue-400 ${
-              activeSection === "download" ? "text-blue-400 font-bold" : ""
+            className={`relative text-sm hover:text-white ${
+              activeSection === "download" ? "text-white font-bold" : ""
             }`}
           >
             {t("download")}
@@ -252,70 +254,70 @@ const Header = () => {
           {/* Dil Dropdown - Mobilde de mevcut */}
           <div className="relative">
             <button
-              className="flex items-center text-white focus:outline-none mt-4"
+              className="flex items-center text-gray-300 focus:outline-none mt-2 text-sm"
               onClick={() => setIsLangDropdownOpen(!isLangDropdownOpen)}
             >
               {/* Seçilen dil ve bayrak mobilde de görünsün */}
               <Image
                 src={flagMap[selectedLanguage]}
                 alt={`${selectedLanguage.toUpperCase()} Flag`}
-                width={20}
-                height={20}
+                width={17}
+                height={17}
                 className="mr-2"
               />
               {selectedLanguage.toUpperCase()}{" "}
               <span className="ml-2">&#9662;</span>
             </button>
             {isLangDropdownOpen && (
-              <ul className="absolute right-0 mt-2 bg-gray-700 text-white py-2 w-32 shadow-lg rounded">
+              <ul className="absolute right-0 mt-2 bg-gray-900 text-white py-2 w-32 shadow-lg rounded">
                 <li
-                  className="px-4 py-2 flex items-center hover:bg-gray-600 cursor-pointer"
+                  className="px-4 py-2 flex items-center hover:bg-gray-700 cursor-pointer text-sm"
                   onClick={() => changeLanguage("az")}
                 >
                   <Image
                     src={flagMap.az}
                     alt="Azerbaijan Flag"
-                    width={20}
-                    height={20}
+                    width={17}
+                    height={17}
                     className="mr-2"
                   />
                   AZ
                 </li>
                 <li
-                  className="px-4 py-2 flex items-center hover:bg-gray-600 cursor-pointer"
+                  className="px-4 py-2 flex items-center hover:bg-gray-700 cursor-pointer text-sm"
                   onClick={() => changeLanguage("en")}
                 >
                   <Image
                     src={flagMap.en}
                     alt="UK Flag"
-                    width={20}
-                    height={20}
+                    width={17}
+                    height={17}
                     className="mr-2"
                   />
                   EN
                 </li>
                 <li
-                  className="px-4 py-2 flex items-center hover:bg-gray-600 cursor-pointer"
+                  className="px-4 py-2 flex items-center hover:bg-gray-700 cursor-pointer text-sm"
                   onClick={() => changeLanguage("tr")}
                 >
                   <Image
                     src={flagMap.tr}
                     alt="Turkey Flag"
-                    width={20}
-                    height={20}
+                    width={17}
+                    height={17}
                     className="mr-2"
                   />
                   TR
                 </li>
                 <li
-                  className="px-4 py-2 flex items-center hover:bg-gray-600 cursor-pointer"
+                  className="px-4 py-2 flex items-center hover:bg-gray-700 cursor-pointer text-sm"
                   onClick={() => changeLanguage("ru")}
                 >
                   <Image
                     src={flagMap.ru}
                     alt="Russia Flag"
-                    width={20}
-                    height={20}
+                    width={17}
+                    height={17}
                     className="mr-2"
                   />
                   RU
