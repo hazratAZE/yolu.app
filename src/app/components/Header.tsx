@@ -74,7 +74,7 @@ const Header = () => {
     window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
   };
   return (
-    <header className="bg-black text-white p-4 fixed w-full z-50 opacity-95">
+    <header className="bg-black text-white p-4 fixed w-full z-50">
       <div className="container mx-auto flex justify-between items-center ">
         <div
           className="header-icon flex items-center"
