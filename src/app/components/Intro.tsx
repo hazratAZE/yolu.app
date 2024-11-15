@@ -1,7 +1,51 @@
+"use client";
 import { useTranslations } from "next-intl";
+import { useState } from "react";
 
+interface CustomAlertProps {
+  message: string;
+  onClose: () => void;
+}
+
+interface CustomAlertProps {
+  message: string;
+  onClose: () => void;
+  buttonText?: string; // Dışarıdan gelecek buton metni için opsiyonel prop
+}
+
+const CustomAlert: React.FC<CustomAlertProps> = ({
+  message,
+  onClose,
+  buttonText = "Bağla",
+}) => {
+  return (
+    <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
+      <div className="bg-white rounded-3xl p-6 shadow-lg md:w-[30%] sm:w-[90%]">
+        <h2 className="text-black text-md font-light text-center">{message}</h2>
+        <div className="mt-4 flex justify-center">
+          <button
+            onClick={onClose}
+            className="bg-orange-500 text-white px-6 py-2 rounded-full"
+          >
+            {buttonText} {/* Dışarıdan alınan buton metni */}
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+};
 const Intro = () => {
   const t = useTranslations();
+  const [isAlertVisible, setAlertVisible] = useState(false); // Alert'in görünürlüğünü kontrol etmek için durum
+
+  const handleIOSClick = () => {
+    setAlertVisible(true); // Alert'i görünür yap
+  };
+
+  const closeAlert = () => {
+    setAlertVisible(false); // Alert'i gizle
+  };
+
   return (
     <section
       id="intro"
@@ -19,7 +63,7 @@ const Intro = () => {
           <div className="flex flex-col sm:flex-row justify-center items-center md:justify-start gap-2">
             {/* Android Butonu */}
             <a
-              href="#download-android"
+              href="https://play.google.com/store/apps/details?id=com.yolu.app"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Download for Android"
@@ -30,7 +74,7 @@ const Intro = () => {
             ></a>
             {/* iOS Butonu */}
             <a
-              href="#download-ios"
+              onClick={handleIOSClick}
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Download for iOS"
@@ -51,6 +95,13 @@ const Intro = () => {
           />
         </div>
       </div>
+      {isAlertVisible && (
+        <CustomAlert
+          message={t("ios_warn")}
+          buttonText={t("close")}
+          onClose={closeAlert}
+        />
+      )}
     </section>
   );
 };
