@@ -212,8 +212,8 @@ const Header = () => {
               <Image
                 src={"/icons/close.svg"}
                 alt={`times icon`}
-                width={34} // İkon boyutunu artırdık ve sabitledik
-                height={34}
+                width={30} // İkon boyutunu artırdık ve sabitledik
+                height={30}
                 className="object-contain"
               />
             ) : (
