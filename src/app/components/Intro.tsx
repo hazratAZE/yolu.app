@@ -10,30 +10,44 @@ const Intro = () => {
       {/* İçerik */}
       <div className="container mx-auto flex flex-col md:flex-row items-center px-4 relative z-20">
         {/* Sol Taraf (Yazılar) */}
-        <div className="md:w-1/2 text-center md:text-left order-2 mt-8 md:order-1 text-white">
+        <div className="md:w-1/2 text-center md:text-left order-2 mt-0 md:order-1 text-white">
           {/* Başlık */}
-          <h1 className="font-bold text-black mb-4">{t("welcome")}</h1>
+          <h1 className="font-bold text-black mb-2 mt-2">{t("welcome")}</h1>
           {/* Kısa Açıklama */}
-          <p className="text-gray-600 mx-auto mb-8">{t("welcome_desc")}</p>
-          {/* İndir Butonu */}
-          <div className="flex justify-center md:justify-start">
+          <p className="text-gray-600 mx-auto mb-6">{t("welcome_desc")}</p>
+          {/* İndir Butonları */}
+          <div className="flex flex-col sm:flex-row justify-center items-center md:justify-start gap-2">
+            {/* Android Butonu */}
             <a
-              href="#download"
+              href="#download-android"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-blue-700 text-white rounded-full font-semibold hover:bg-blue-800 transition flex items-center downloadButton shadow-md"
-            >
-              {t("download_now")}
-            </a>
+              aria-label="Download for Android"
+              className="rounded-xl w-[280px] h-[80px] shadow-md bg-no-repeat bg-center bg-cover hover:opacity-90 transition"
+              style={{
+                backgroundImage: "url('/images/android.png')",
+              }}
+            ></a>
+            {/* iOS Butonu */}
+            <a
+              href="#download-ios"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Download for iOS"
+              className="rounded-xl w-[280px] h-[80px] shadow-md bg-no-repeat bg-center bg-cover hover:opacity-90 transition"
+              style={{
+                backgroundImage: "url('/images/ios.jpg')",
+              }}
+            ></a>
           </div>
         </div>
 
         {/* Sağ Taraf (Resim) */}
         <div className="md:w-1/2 flex justify-center items-center order-1 md:order-2">
           <img
-            src="/icons/workers.svg" // Resmin yolu
+            src="/icons/workers.svg"
             alt="Illustration"
-            className="max-w-full md:max-w-lg"
+            className="sm:h-[360px] sm:w-[420px] h-[220px] w-[280px] mt-8"
           />
         </div>
       </div>

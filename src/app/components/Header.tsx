@@ -123,9 +123,14 @@ const Header = () => {
             <Link
               onClick={scrollToContact}
               href="#footer"
-              className="text-sm px-4 py-2 bg-blue-400 text-black rounded-full font-medium hover:bg-blue-300 border border-black"
+              className="text-sm px-4 py-2 bg-blue-400 text-black rounded-full font-medium hover:bg-blue-300 border border-black flex-row flex justify-center items-center"
             >
-              {t("contact_us")}
+              <span>{t("contact_us")}</span>
+              <img
+                src="/icons/phone.svg"
+                alt="iOS icon"
+                className="w-4 h-4 ml-2"
+              />
             </Link>
 
             <div className="relative">
@@ -268,9 +273,14 @@ const Header = () => {
           <Link
             onClick={scrollToContact}
             href="#footer"
-            className="text-sm px-4 py-2 bg-blue-400 text-black rounded-full font-medium hover:bg-blue-300 border border-black"
+            className="text-sm px-4 py-2 bg-blue-400 text-black rounded-full font-medium hover:bg-blue-300 border border-black flex-row flex justify-center items-center"
           >
-            {t("contact_us")}
+            <span>{t("contact_us")}</span>
+            <img
+              src="/icons/phone.svg"
+              alt="iOS icon"
+              className="w-4 h-4 ml-2"
+            />
           </Link>
 
           <div className="relative">
