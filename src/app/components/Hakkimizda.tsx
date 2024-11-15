@@ -4,10 +4,6 @@ import { useTranslations } from "next-intl";
 
 const Hakkımızda = () => {
   const t = useTranslations();
-  const scrollToContact = () => {
-    // Sayfanın en altına kaydırmak için window.scrollTo kullanabilirsiniz
-    window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
-  };
   return (
     <section
       id="about"
@@ -86,14 +82,6 @@ const Hakkımızda = () => {
           />
         </div>
       </div>
-
-      {/* İletişim Butonu */}
-      <button
-        onClick={scrollToContact}
-        className="bg-gray-800 text-white rounded-full font-semibold hover:bg-gray-900 transition duration-300 px-8 py-4"
-      >
-        {t("contact_us")}
-      </button>
     </section>
   );
 };

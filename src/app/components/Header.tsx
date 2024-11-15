@@ -25,12 +25,14 @@ const Header = () => {
     tr: "/icons/tr-flag.svg",
     ru: "/icons/ru-flag.svg",
   };
+
   useEffect(() => {
     const savedLanguage = localStorage.getItem("selectedLanguage") as Language;
     if (savedLanguage) {
       setSelectedLanguage(savedLanguage);
     }
   }, []);
+
   const handleScroll = () => {
     const sections = document.querySelectorAll("section");
     const scrollPosition = window.scrollY + 100;
@@ -52,31 +54,28 @@ const Header = () => {
     };
   }, []);
 
-  // Sayfa yenileme fonksiyonu
   const refreshPage = () => {
     window.location.reload();
   };
 
-  // Dil değişimi fonksiyonu (TypeScript uyumlu)
   const changeLanguage = (lang: Language) => {
     setSelectedLanguage(lang);
     setIsLangDropdownOpen(false);
     localStorage.setItem("selectedLanguage", lang);
-    console.log("Dil değişti:", lang);
-    // Yeni path'i oluşturun: mevcut path'den son dil kodunu çıkarıp yenisini ekleyin
     const newPath = pathname.replace(
       /\/[a-z]{2}$/,
       `/${lang.toLocaleLowerCase()}`
-    ); // /en veya /az gibi dil kodunu al ve yenisi ile değiştir
+    );
 
-    // Router ile yönlendirme yap
     router.push(newPath);
   };
-
+  const scrollToContact = () => {
+    // Sayfanın en altına kaydırmak için window.scrollTo kullanabilirsiniz
+    window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
+  };
   return (
     <header className="bg-black text-white p-4 fixed w-full z-50 opacity-95">
       <div className="container mx-auto flex justify-between items-center ">
-        {/* Yolu ikonu, en solda sabit */}
         <div
           className="header-icon flex items-center"
           onClick={refreshPage}
@@ -85,9 +84,8 @@ const Header = () => {
           <Image src="/icons/yolu.svg" alt="Yolu Icon" width={46} height={46} />
         </div>
 
-        {/* Masaüstü Menüsü ve Dil Dropdown */}
         <div className="flex items-center ml-auto space-x-4 max-w-[50%] w-full justify-end">
-          <nav className="hidden md:flex space-x-4 text-gray-300">
+          <nav className="hidden md:flex space-x-4 text-gray-300 items-center">
             <Link
               href="#intro"
               className={`relative text-sm  hover:text-white ${
@@ -121,13 +119,20 @@ const Header = () => {
               {t("download")}
             </Link>
 
-            {/* Dil Dropdown */}
+            {/* "Contact Us" Button */}
+            <Link
+              onClick={scrollToContact}
+              href="#footer"
+              className="text-sm px-4 py-2 bg-blue-400 text-black rounded-full font-medium hover:bg-blue-300 border border-black"
+            >
+              {t("contact_us")}
+            </Link>
+
             <div className="relative">
               <button
                 className="flex items-center text-sm text-gray-300 focus:outline-none mx-4"
                 onClick={() => setIsLangDropdownOpen(!isLangDropdownOpen)}
               >
-                {/* Seçilen dil ve bayrak */}
                 <Image
                   src={flagMap[selectedLanguage]}
                   alt={`${selectedLanguage.toUpperCase()} Flag`}
@@ -150,7 +155,7 @@ const Header = () => {
                       width={17}
                       height={17}
                       className="mr-2"
-                    />
+                    />{" "}
                     AZ
                   </li>
                   <li
@@ -163,7 +168,7 @@ const Header = () => {
                       width={17}
                       height={17}
                       className="mr-2"
-                    />
+                    />{" "}
                     EN
                   </li>
                   <li
@@ -176,7 +181,7 @@ const Header = () => {
                       width={17}
                       height={17}
                       className="mr-2"
-                    />
+                    />{" "}
                     TR
                   </li>
                   <li
@@ -189,7 +194,7 @@ const Header = () => {
                       width={17}
                       height={17}
                       className="mr-2"
-                    />
+                    />{" "}
                     RU
                   </li>
                 </ul>
@@ -198,7 +203,6 @@ const Header = () => {
           </nav>
         </div>
 
-        {/* Mobil Menüsü */}
         <div className="md:hidden">
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -209,7 +213,6 @@ const Header = () => {
         </div>
       </div>
 
-      {/* Dropdown Menü - Mobil İçin */}
       <nav
         className={`md:hidden ${isMenuOpen ? "block" : "hidden"} bg-black p-4`}
       >
@@ -251,13 +254,20 @@ const Header = () => {
             {t("download")}
           </Link>
 
-          {/* Dil Dropdown - Mobilde de mevcut */}
+          {/* Mobile "Contact Us" Button */}
+          <Link
+            onClick={scrollToContact}
+            href="#footer"
+            className="text-sm px-4 py-2 bg-blue-400 text-black rounded-full font-medium hover:bg-blue-300 border border-black"
+          >
+            {t("contact_us")}
+          </Link>
+
           <div className="relative">
             <button
               className="flex items-center text-gray-300 focus:outline-none mt-2 text-sm"
               onClick={() => setIsLangDropdownOpen(!isLangDropdownOpen)}
             >
-              {/* Seçilen dil ve bayrak mobilde de görünsün */}
               <Image
                 src={flagMap[selectedLanguage]}
                 alt={`${selectedLanguage.toUpperCase()} Flag`}
@@ -280,7 +290,7 @@ const Header = () => {
                     width={17}
                     height={17}
                     className="mr-2"
-                  />
+                  />{" "}
                   AZ
                 </li>
                 <li
@@ -293,7 +303,7 @@ const Header = () => {
                     width={17}
                     height={17}
                     className="mr-2"
-                  />
+                  />{" "}
                   EN
                 </li>
                 <li
@@ -306,7 +316,7 @@ const Header = () => {
                     width={17}
                     height={17}
                     className="mr-2"
-                  />
+                  />{" "}
                   TR
                 </li>
                 <li
@@ -319,7 +329,7 @@ const Header = () => {
                     width={17}
                     height={17}
                     className="mr-2"
-                  />
+                  />{" "}
                   RU
                 </li>
               </ul>
