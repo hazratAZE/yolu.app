@@ -220,7 +220,7 @@ const Header = () => {
           <Link
             href="#intro"
             onClick={() => setIsMenuOpen(false)}
-            className={`relative text-sm hover:text-white ${
+            className={`relative text-md hover:text-white ${
               activeSection === "intro" ? "text-white font-bold" : ""
             }`}
           >
@@ -229,7 +229,7 @@ const Header = () => {
           <Link
             href="#about"
             onClick={() => setIsMenuOpen(false)}
-            className={`relative text-sm hover:text-white ${
+            className={`relative text-md hover:text-white ${
               activeSection === "about" ? "text-white font-bold" : ""
             }`}
           >
@@ -238,7 +238,7 @@ const Header = () => {
           <Link
             href="#features"
             onClick={() => setIsMenuOpen(false)}
-            className={`relative text-sm hover:text-white ${
+            className={`relative text-md hover:text-white ${
               activeSection === "features" ? "text-white font-bold" : ""
             }`}
           >
@@ -247,7 +247,7 @@ const Header = () => {
           <Link
             href="#download"
             onClick={() => setIsMenuOpen(false)}
-            className={`relative text-sm hover:text-white ${
+            className={`relative text-md hover:text-white ${
               activeSection === "download" ? "text-white font-bold" : ""
             }`}
           >
