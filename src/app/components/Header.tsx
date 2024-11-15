@@ -208,7 +208,17 @@ const Header = () => {
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             className="menu-toggle text-white focus:outline-none text-lg"
           >
-            {isMenuOpen ? <span>&#215;</span> : <span>&#9776;</span>}
+            {isMenuOpen ? (
+              <Image
+                src={"/icons/close.svg"}
+                alt={`times icon`}
+                width={34} // İkon boyutunu artırdık ve sabitledik
+                height={34}
+                className="object-contain"
+              />
+            ) : (
+              <span>&#9776;</span>
+            )}
           </button>
         </div>
       </div>
