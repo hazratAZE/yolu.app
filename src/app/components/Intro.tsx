@@ -12,7 +12,7 @@ const Intro = () => {
         {/* Sol Taraf (Yazılar) */}
         <div className="md:w-1/2 text-center md:text-left order-2 mt-0 md:order-1 text-white">
           {/* Başlık */}
-          <h1 className="font-bold text-black mb-2 mt-2">{t("welcome")}</h1>
+          <h1 className="font-bold text-black mb-2 mt-4">{t("welcome")}</h1>
           {/* Kısa Açıklama */}
           <p className="text-gray-600 mx-auto mb-6">{t("welcome_desc")}</p>
           {/* İndir Butonları */}
@@ -47,7 +47,7 @@ const Intro = () => {
           <img
             src="/icons/workers.svg"
             alt="Illustration"
-            className="sm:h-[360px] sm:w-[420px] h-[220px] w-[280px] mt-8"
+            className="sm:h-[360px] sm:w-[420px] h-[200px] w-[260px] mt-8"
           />
         </div>
       </div>
