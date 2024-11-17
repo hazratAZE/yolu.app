@@ -49,14 +49,16 @@ const Intro = () => {
   return (
     <section
       id="intro"
-      className="relative bg-gray-100 min-h-screen flex items-center bg-cover bg-center w-full md:px-16 lg:px-32 px-2"
+      className="relative min-h-screen flex items-center bg-cover bg-center w-full md:px-16 lg:px-32 px-2 bg-gradient-to-r from-blue-200 to-white"
     >
       {/* İçerik */}
       <div className="container mx-auto flex flex-col md:flex-row items-center px-4 relative z-20">
         {/* Sol Taraf (Yazılar) */}
         <div className="md:w-1/2 text-center md:text-left order-2 mt-0 md:order-1 text-white">
           {/* Başlık */}
-          <h1 className="font-bold text-black mb-2 mt-4">{t("welcome")}</h1>
+          <h1 className="font-bold text-black mb-2 mt-4 leading-tight">
+            {t("welcome")}
+          </h1>
           {/* Kısa Açıklama */}
           <p className="text-gray-700 mx-auto mb-6">{t("welcome_desc")}</p>
           {/* İndir Butonları */}
