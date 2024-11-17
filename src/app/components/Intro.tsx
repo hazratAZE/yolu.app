@@ -49,7 +49,7 @@ const Intro = () => {
   return (
     <section
       id="intro"
-      className="relative min-h-screen flex items-center bg-cover bg-center w-full md:px-16 lg:px-32 px-2 bg-gradient-to-r from-blue-100 to-blue-50"
+      className="relative min-h-screen flex items-center bg-cover bg-center w-full md:px-16 lg:px-32 px-2 bg-blue-50"
     >
       {/* İçerik */}
       <div className="container mx-auto flex flex-col md:flex-row items-center px-4 relative z-20">
