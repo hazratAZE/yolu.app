@@ -58,16 +58,16 @@ const Intro = () => {
           {/* Başlık */}
           <h1 className="font-bold text-black mb-2 mt-4">{t("welcome")}</h1>
           {/* Kısa Açıklama */}
-          <p className="text-gray-600 mx-auto mb-6">{t("welcome_desc")}</p>
+          <p className="text-gray-700 mx-auto mb-6">{t("welcome_desc")}</p>
           {/* İndir Butonları */}
-          <div className="flex flex-col sm:flex-row justify-center items-center md:justify-start gap-2">
+          <div className="flex flex-row justify-center items-center md:justify-start gap-2">
             {/* Android Butonu */}
             <a
               href="https://play.google.com/store/apps/details?id=com.yolu.app"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Download for Android"
-              className="rounded-xl w-[280px] h-[80px] shadow-md bg-no-repeat bg-center bg-cover hover:opacity-90 transition"
+              className="rounded-xl  w-[160px] h-[50px]  sm:w-[260px] sm:h-[70px] shadow-md bg-no-repeat bg-center bg-cover hover:opacity-90 transition"
               style={{
                 backgroundImage: "url('/images/android.png')",
               }}
@@ -78,7 +78,7 @@ const Intro = () => {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Download for iOS"
-              className="rounded-xl w-[280px] h-[80px] shadow-md bg-no-repeat bg-center bg-cover hover:opacity-90 transition"
+              className="rounded-xl  w-[160px] h-[50px]  sm:w-[260px] sm:h-[70px] shadow-md bg-no-repeat bg-center bg-cover hover:opacity-90 transition"
               style={{
                 backgroundImage: "url('/images/ios.jpg')",
               }}

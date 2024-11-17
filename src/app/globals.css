@@ -38,7 +38,7 @@ h1 {
   font-size: 3.5rem; /* Mobilde başlık boyutunu küçült */
 }
 p {
-  font-size: 1.25rem; /* Mobilde açıklama metnini küçült */
+  font-size: 1rem; /* Mobilde açıklama metnini küçült */
 }
 .downloadButton {
   padding: 20px 100px; /* Mobilde buton boyutunu küçült */
@@ -63,7 +63,7 @@ p {
   }
 
   p {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     letter-spacing: 0.6px;
     /* Mobilde açıklama metnini küçült */
   }
