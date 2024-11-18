@@ -56,11 +56,13 @@ const Intro = () => {
         {/* Sol Taraf (Yazılar) */}
         <div className="md:w-1/2 text-center md:text-left order-2 mt-0 md:order-1 text-white">
           {/* Başlık */}
-          <h1 className="font-bold text-gray-950 mb-2 mt-2 leading-tight">
+          <h1 className=" text-gray-950 mb-2 mt-2 leading-tight font-sans font-bold">
             {t("welcome")}
           </h1>
           {/* Kısa Açıklama */}
-          <p className="text-gray-700 mx-auto mb-6">{t("welcome_desc")}</p>
+          <p className="text-gray-700 mx-auto mb-6 font-sans">
+            {t("welcome_desc")}
+          </p>
           {/* İndir Butonları */}
           <div className="flex flex-row justify-center items-center md:justify-start gap-2">
             {/* Android Butonu */}

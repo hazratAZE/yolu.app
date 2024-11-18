@@ -35,7 +35,7 @@ nav a {
   justify-content: flex-start; /* Yolu ikonunu sola al */
 }
 h1 {
-  font-size: 3.5rem; /* Mobilde başlık boyutunu küçült */
+  font-size: 3.7rem; /* Mobilde başlık boyutunu küçült */
 }
 p {
   font-size: 1rem; /* Mobilde açıklama metnini küçült */
@@ -58,7 +58,7 @@ p {
     justify-content: center; /* Yolu ikonu ortalansın */
   }
   h1 {
-    font-size: 1.9rem; /* Mobilde başlık boyutunu küçült */
+    font-size: 2rem; /* Mobilde başlık boyutunu küçült */
     letter-spacing: 0.6px;
   }
 
