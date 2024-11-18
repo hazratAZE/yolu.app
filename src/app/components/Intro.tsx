@@ -56,11 +56,11 @@ const Intro = () => {
         {/* Sol Taraf (Yazılar) */}
         <div className="md:w-1/2 text-center md:text-left order-2 mt-0 md:order-1 text-white">
           {/* Başlık */}
-          <h1 className=" text-gray-950 mb-2 mt-2 leading-tight font-sans font-bold">
+          <h1 className=" text-gray-900 mb-2 mt-2 leading-tight font-sans font-bold">
             {t("welcome")}
           </h1>
           {/* Kısa Açıklama */}
-          <p className="text-gray-700 mx-auto mb-6 font-sans">
+          <p className="text-gray-800 mx-auto mb-6 font-sans">
             {t("welcome_desc")}
           </p>
           {/* İndir Butonları */}
@@ -71,7 +71,7 @@ const Intro = () => {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Download for Android"
-              className="rounded-xl  w-[160px] h-[50px]  sm:w-[260px] sm:h-[70px] shadow-md bg-no-repeat bg-center bg-cover hover:opacity-90 transition"
+              className="rounded-xl  w-[160px] h-[50px]  sm:w-[280px] sm:h-[80px] shadow-md bg-no-repeat bg-center bg-cover hover:opacity-90 transition"
               style={{
                 backgroundImage: "url('/images/android.png')",
               }}
@@ -82,7 +82,7 @@ const Intro = () => {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Download for iOS"
-              className="rounded-xl  w-[160px] h-[50px]  sm:w-[260px] sm:h-[70px] shadow-md bg-no-repeat bg-center bg-cover hover:opacity-90 transition"
+              className="rounded-xl  w-[160px] h-[50px]  sm:w-[280px] sm:h-[80px] shadow-md bg-no-repeat bg-center bg-cover hover:opacity-90 transition"
               style={{
                 backgroundImage: "url('/images/ios.jpg')",
               }}
@@ -95,7 +95,7 @@ const Intro = () => {
           <img
             src="/images/mockup2.png"
             alt="Illustration"
-            className="sm:h-[420px] sm:w-[560px] h-[262px] w-[350px] mt-2"
+            className="sm:h-[420px] sm:w-[560px] lg:h-[462px] lg:w-[616px] h-[262px] w-[350px]"
           />
         </div>
       </div>

@@ -74,7 +74,7 @@ const Header = () => {
     window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
   };
   return (
-    <header className="bg-black text-white p-4 fixed w-full z-50">
+    <header className="bg-black text-white p-4 fixed w-full z-50 font-sans">
       <div className="container mx-auto flex justify-between items-center ">
         <div
           className="header-icon flex items-center"
@@ -88,7 +88,7 @@ const Header = () => {
           <nav className="hidden md:flex space-x-4 text-gray-300 items-center">
             <Link
               href="#intro"
-              className={`relative text-sm  hover:text-white ${
+              className={`relative text-md  hover:text-white ${
                 activeSection === "intro" ? "text-white font-bold" : ""
               }`}
             >
@@ -96,7 +96,7 @@ const Header = () => {
             </Link>
             <Link
               href="#about"
-              className={`relative text-sm hover:text-white ${
+              className={`relative text-md hover:text-white ${
                 activeSection === "about" ? "text-white font-bold" : ""
               }`}
             >
@@ -104,7 +104,7 @@ const Header = () => {
             </Link>
             <Link
               href="#features"
-              className={`relative text-sm hover:text-white ${
+              className={`relative text-md hover:text-white ${
                 activeSection === "features" ? "text-white font-bold" : ""
               }`}
             >
@@ -112,7 +112,7 @@ const Header = () => {
             </Link>
             <Link
               href="#download"
-              className={`relative text-sm hover:text-white ${
+              className={`relative text-md hover:text-white ${
                 activeSection === "download" ? "text-white font-bold" : ""
               }`}
             >
