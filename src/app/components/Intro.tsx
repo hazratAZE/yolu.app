@@ -93,7 +93,7 @@ const Intro = () => {
           <img
             src="/images/mockup2.png"
             alt="Illustration"
-            className="sm:h-[420px] sm:w-[560px] h-[252px] w-[336px] mt-2"
+            className="sm:h-[420px] sm:w-[560px] h-[262px] w-[350px] mt-2"
           />
         </div>
       </div>
