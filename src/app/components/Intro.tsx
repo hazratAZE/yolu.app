@@ -56,7 +56,7 @@ const Intro = () => {
         {/* Sol Taraf (Yazılar) */}
         <div className="md:w-1/2 text-center md:text-left order-2 mt-0 md:order-1 text-white">
           {/* Başlık */}
-          <h1 className="font-bold text-gray-950 mb-2 mt-8 leading-tight">
+          <h1 className="font-bold text-gray-950 mb-2 mt-4 leading-tight">
             {t("welcome")}
           </h1>
           {/* Kısa Açıklama */}
@@ -91,9 +91,9 @@ const Intro = () => {
         {/* Sağ Taraf (Resim) */}
         <div className="md:w-1/2 flex justify-center items-center order-1 md:order-2">
           <img
-            src="/images/mockup.png"
+            src="/images/mockup2.png"
             alt="Illustration"
-            className="sm:h-[360px] sm:w-[460px] h-[220px] w-[300px] mt-2"
+            className="sm:h-[420px] sm:w-[560px] h-[252px] w-[336px] mt-2"
           />
         </div>
       </div>
