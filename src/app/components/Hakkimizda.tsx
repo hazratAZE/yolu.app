@@ -1,87 +1,57 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-
+import Link from "next/link";
 const Hakkımızda = () => {
   const t = useTranslations();
   return (
     <section
       id="about"
-      className="min-h-screen flex flex-col items-center justify-center pt-16 px-2"
+      className="flex flex-col items-center justify-center min-h-screen bg-blue-50 md:px-16 lg:px-32 px-4 pt-16 font-sans"
     >
-      <h1 className="font-bold mb-4 text-black">{t("about")}</h1>
-      <p className="text-center mb-16 text-gray-600 md:w-[80%]">
-        {t("about_desc")}
-      </p>
-      <div className="flex flex-col mb-20">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-          {/* Her bir değer için dışarıdan yüklenen resimler */}
-          <div className="flex items-center text-left p-4 bg-gray-800 rounded-lg">
-            <img
-              src="/icons/bluedot.svg" // Müşteri Memnuniyeti için SVG yolu
-              alt="Müştəri Məmnuniyyəti"
-              className="w-12 h-12 mr-4"
-            />
-            <p className="text-white text-lg font-medium">
-              {" "}
-              {t("customer_satisfaction")}
-            </p>
-          </div>
-          <div className="flex items-center text-left p-4 bg-gray-800 rounded-lg">
-            <img
-              src="/icons/bluedot.svg" // İnovasyon için SVG yolu
-              alt="İnovasiya"
-              className="w-12 h-12 mr-4"
-            />
-            <p className="text-white text-lg font-medium">{t("innovation")}</p>
-          </div>
-          <div className="flex items-center text-left p-4 bg-gray-800 rounded-lg">
-            <img
-              src="/icons/bluedot.svg" // Etika ve Şeffaflık için SVG yolu
-              alt="Etika və Şəffaflıq"
-              className="w-12 h-12 mr-4"
-            />
-            <p className="text-white text-lg font-medium">
-              {t("ethics_transparency")}
-            </p>
-          </div>
-          <div className="flex items-center text-left p-4 bg-gray-800 rounded-lg">
-            <img
-              src="/icons/bluedot.svg" // Komanda İşbirliği için SVG yolu
-              alt="Komanda İşbirliyi"
-              className="w-12 h-12 mr-4"
-            />
-            <p className="text-white text-lg font-medium">
-              {t("team_collaboration")}
-            </p>
-          </div>
-        </div>
-      </div>
-      {/* Vizyon ve Missiya Bölümü */}
-      <div className="flex flex-col md:flex-row mb-8 md:px-6">
-        <div className="md:w-1/2 p-2 bg-gray-800">
-          <h2 className="text-2xl font-semibold mb-2 text-blue-400">
-            {t("our_vision")}
-          </h2>
-          <p className="mx-auto text-white mb-4">{t("vision_desc")}</p>
+      {/* Başlık */}
+      <h1 className="font-bold text-black text-center mb-2">
+        {t("about")} {/* Başlık */}
+      </h1>
+
+      {/* İçerik */}
+      <div className="container mx-auto flex flex-col md:flex-row items-center mb-8">
+        {/* Sol taraf - Resim */}
+        <div className="md:w-1/2 mb-6 md:mb-0 order-2 md:order-1">
           <img
-            src="/images/mission.jpg" // Vizyon resminin yolu
-            alt="Vizyonumuz"
-            className="w-full h-80 object-cover mb-2 rounded-lg"
+            src="/images/iphonemock2.png" // Sol taraf resim için kaynak
+            alt="Hakkımızda"
+            className="sm:h-[540px] sm:w-[360px] lg:h-[600px] lg:w-[400px] h-[300px] w-[200px]"
           />
         </div>
-        <div className="md:w-1/2 p-2 bg-gray-800">
-          <h2 className="text-2xl font-semibold mb-2 text-blue-400">
-            {t("mission")}
+
+        {/* Sağ taraf - Metin */}
+        <div className="md:w-1/2 text-center md:text-left md:order-2 order-1">
+          <h2 className="font-bold text-gray-800 mb-4">
+            <span className="text-blue-700">Yolu</span>, {t("yolu_desc")}
           </h2>
-          <p className="mx-auto text-white mb-4">{t("mission_desc")}</p>
-          <img
-            src="/images/worker.jpg" // Missiya resminin yolu
-            alt="Missiyamız"
-            className="w-full h-80 object-cover mb-2 rounded-lg"
-          />
+          <p className="text-gray-800 mb-10">{t("yolu_startup_desc")}</p>{" "}
+          {/* Vizyonumuz Açıklaması */}
+          {/* Buton */}
+          <Link
+            href={"#features"}
+            className="px-12 py-4 border border-black text-black font-semibold rounded-md hover:bg-blue-100"
+          >
+            {t("features")}{" "}
+            {/* Burada "learn_more" çevirisini kullanabilirsiniz */}
+          </Link>
         </div>
       </div>
+
+      {/* Mobil uyum için düzenleme */}
+      <style jsx>{`
+        @media (max-width: 768px) {
+          #about .container {
+            display: flex;
+            flex-direction: column-reverse; /* Mobilde metni yukarı taşı */
+          }
+        }
+      `}</style>
     </section>
   );
 };

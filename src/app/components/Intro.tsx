@@ -54,11 +54,10 @@ const Intro = () => {
       {/* İçerik */}
       <div className="container mx-auto flex flex-col md:flex-row items-center px-4 relative z-20">
         {/* Sol Taraf (Yazılar) */}
-        <div className="md:w-1/2 text-center md:text-left order-2 mt-0 md:order-1 text-white">
+        <div className="md:w-1/2 text-center md:text-left order-2 mt-0 md:order-1 text-white z-20">
           {/* Başlık */}
           <h1 className=" text-gray-900 mb-2 mt-2 leading-tight font-sans font-bold">
-            <span className="text-blue-600">Yolu,</span>
-            {t("welcome")}
+            <span className="text-blue-700">Yolu</span>,{t("welcome")}
           </h1>
           {/* Kısa Açıklama */}
           <p className="text-gray-800 mx-auto mb-6 font-sans">
@@ -92,7 +91,7 @@ const Intro = () => {
         </div>
 
         {/* Sağ Taraf (Resim) */}
-        <div className="md:w-1/2 flex justify-center items-center order-1 md:order-2">
+        <div className="md:w-1/2 flex justify-center items-center order-1 md:order-2 z-10">
           <img
             src="/images/mockup2.png"
             alt="Illustration"
