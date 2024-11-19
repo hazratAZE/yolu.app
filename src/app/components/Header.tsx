@@ -111,6 +111,14 @@ const Header = () => {
               {t("features")}
             </Link>
             <Link
+              href="#features"
+              className={`relative text-md hover:text-white ${
+                activeSection === "features" ? "text-white font-bold" : ""
+              }`}
+            >
+              FAQ
+            </Link>
+            <Link
               href="#download"
               className={`relative text-md hover:text-white ${
                 activeSection === "download" ? "text-white font-bold" : ""
@@ -258,6 +266,15 @@ const Header = () => {
             }`}
           >
             {t("features")}
+          </Link>
+          <Link
+            href="#features"
+            onClick={() => setIsMenuOpen(false)}
+            className={`relative text-md hover:text-white ${
+              activeSection === "features" ? "text-white font-bold" : ""
+            }`}
+          >
+            FAQ
           </Link>
           <Link
             href="#download"
