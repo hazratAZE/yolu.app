@@ -60,7 +60,7 @@ const Ozellikler = () => {
       <div className="flex flex-col md:flex-row md:items-center w-full gap-12">
         {/* Sol taraf: Özellikler */}
         <div className="flex flex-col flex-1 order-2 md:order-2">
-          <div className="grid grid-cols-1 sm:grid-cols-2 pt-4 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {featuresData.map((feature, index) => (
               <div
                 key={index}
@@ -90,7 +90,7 @@ const Ozellikler = () => {
         </div>
         {/* Sağ taraf: Görsel */}
         <div className="flex flex-col items-center justify-center flex-1 order-1 md:order-2">
-          <h2 className="text-gray-900 font-sans font-bold mb-1 order-2 md:order-1 text-left">
+          <h2 className="text-gray-900 font-sans font-bold order-2 md:order-1 text-left">
             {t("key_features")}
           </h2>
           <img
