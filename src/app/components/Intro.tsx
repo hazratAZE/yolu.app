@@ -57,7 +57,7 @@ const Intro = () => {
         <div className="md:w-1/2 text-center md:text-left order-2 mt-0 md:order-1 text-white z-20">
           {/* Başlık */}
           <h1 className=" text-gray-900 mb-2 mt-2 leading-tight font-sans font-bold">
-            <span className="text-blue-700">Yolu</span>,{t("welcome")}
+            <span className="text-blue-700">Yolu</span>-{t("welcome")}
           </h1>
           {/* Kısa Açıklama */}
           <p className="text-gray-800 mx-auto mb-6 font-sans">
