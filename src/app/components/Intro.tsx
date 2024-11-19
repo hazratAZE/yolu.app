@@ -21,7 +21,7 @@ const CustomAlert: React.FC<CustomAlertProps> = ({
   return (
     <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
       <div className="bg-white rounded-3xl p-6 shadow-lg md:w-[30%] sm:w-[90%]">
-        <h2 className="text-black text-md font-light text-center">{message}</h2>
+        <h3 className="text-black text-sm font-light text-center">{message}</h3>
         <div className="mt-4 flex justify-center">
           <button
             onClick={onClose}
