@@ -27,7 +27,7 @@ const Hakkımızda = () => {
 
         {/* Sağ taraf - Metin */}
         <div className="md:w-1/2 text-center md:text-left md:order-2 order-1">
-          <h2 className="font-bold text-gray-800 mb-4">
+          <h2 className="font-semibold text-gray-800 mb-4">
             <span className="text-blue-700">Yolu</span>-{t("yolu_desc")}
           </h2>
           <p className="text-gray-800 mb-10">{t("yolu_startup_desc")}</p>{" "}
@@ -35,7 +35,7 @@ const Hakkımızda = () => {
           {/* Buton */}
           <Link
             href={"#features"}
-            className="px-6 py-3 text-black font-sans font-medium border-gray-900 border-2 rounded-full hover:bg-blue-900 bg-blue-50"
+            className="px-6 py-3 text-black font-sans font-medium border-gray-900 border-2 rounded-full hover:bg-blue-800 hover:text-white hover:border-0 bg-blue-50"
           >
             {t("features")}{" "}
             {/* Burada "learn_more" çevirisini kullanabilirsiniz */}

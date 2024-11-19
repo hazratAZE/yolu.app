@@ -55,7 +55,9 @@ const Ozellikler = () => {
       className="min-h-screen flex flex-col items-center bg-blue-50 px-4 md:px-16 lg:px-32 pt-16 font-sans"
     >
       {/* Başlık */}
-      <h1 className="text-black font-bold text-center mb-2">{t("features")}</h1>
+      <h1 className="text-black font-bold text-center mb-2 md:mb-8">
+        {t("features")}
+      </h1>
 
       <div className="flex flex-col md:flex-row md:items-center w-full gap-12">
         {/* Sol taraf: Özellikler */}
@@ -90,7 +92,7 @@ const Ozellikler = () => {
         </div>
         {/* Sağ taraf: Görsel */}
         <div className="flex flex-col items-center justify-center flex-1 order-1 md:order-2">
-          <h2 className="text-gray-900 font-sans font-bold order-2 md:order-1 text-left">
+          <h2 className="text-gray-900 font-sans font-semibold order-2 md:order-1 text-left">
             {t("key_features")}
           </h2>
           <img
