@@ -49,9 +49,7 @@ const Ozellikler = () => {
       className="min-h-screen flex flex-col items-center bg-blue-50 px-4 md:px-16 lg:px-32 pt-16 font-sans"
     >
       {/* Başlık */}
-      <h1 className="text-black font-bold text-center mb-12">
-        {t("features")}
-      </h1>
+      <h1 className="text-black font-bold text-center mb-2">{t("features")}</h1>
 
       <div className="flex flex-col md:flex-row md:items-center w-full gap-12">
         {/* Sol taraf: Özellikler */}
