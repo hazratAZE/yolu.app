@@ -60,32 +60,37 @@ const Ozellikler = () => {
             {featuresData.map((feature, index) => (
               <div
                 key={index}
-                className="flex flex-col items-start justify-start text-left border-l-8 border-gray-600 pl-8 p-4"
+                className="flex flex-col items-start justify-start text-left border-l-4 border-blue-200 pl-6 p-4 bg-white rounded-xl"
               >
                 <div
-                  className="mb-4 rounded-full p-4 text-2xl font-bold text-black"
+                  className="mb-2 rounded-full p-3 text-2xl font-bold text-black"
                   style={{ backgroundColor: feature.color }}
                 >
                   <Image
                     src={feature.icon}
                     alt={"image"}
-                    width={32}
-                    height={32}
+                    width={24}
+                    height={24}
                     className="object-contain"
                   />
                 </div>
-                <p className="text-black text-sm font-medium">{feature.text}</p>
+                <h3 className="text-gray-900 font-sans font-bold mb-1 text-lg">
+                  {feature.title}
+                </h3>
+                <p className="text-gray-600">{feature.text}</p>
               </div>
             ))}
           </div>
         </div>
-
         {/* Sağ taraf: Görsel */}
-        <div className="flex justify-center flex-1 order-1 md:order-2">
+        <div className="flex flex-col items-center justify-center flex-1 order-1 md:order-2">
+          <h2 className="text-gray-900 font-sans font-bold mb-1 order-2 md:order-1 text-center">
+            <span className="text-blue-800">Yolu</span> - {t("key_features")}
+          </h2>
           <img
             src="/images/iphonemock2.png"
             alt="Hakkımızda"
-            className="sm:h-[540px] sm:w-[360px] lg:h-[600px] lg:w-[400px] h-[300px] w-[200px]"
+            className="sm:h-[540px] sm:w-[360px] lg:h-[600px] lg:w-[400px] h-[300px] w-[200px] order-1 md:order-2"
           />
         </div>
       </div>

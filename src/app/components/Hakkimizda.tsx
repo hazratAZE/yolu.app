@@ -35,7 +35,7 @@ const Hakkımızda = () => {
           {/* Buton */}
           <Link
             href={"#features"}
-            className="px-12 py-4 border border-black text-black font-sans rounded-xl hover:bg-blue-100"
+            className="px-12 py-4 border border-black text-black font-sans rounded-xl hover:bg-blue-100 bg-white"
           >
             {t("features")}{" "}
             {/* Burada "learn_more" çevirisini kullanabilirsiniz */}
