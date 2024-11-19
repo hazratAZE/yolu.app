@@ -86,7 +86,7 @@ const Ozellikler = () => {
             <span className="text-blue-800">Yolu</span> - {t("key_features")}
           </h2>
           <img
-            src="/images/iphonemock2.png"
+            src="/images/mockup5.png"
             alt="Hakkımızda"
             className="sm:h-[540px] sm:w-[360px] lg:h-[600px] lg:w-[400px] h-[300px] w-[200px] order-1 md:order-2"
           />

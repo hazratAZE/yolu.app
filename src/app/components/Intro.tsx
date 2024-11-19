@@ -93,7 +93,7 @@ const Intro = () => {
         {/* Sağ Taraf (Resim) */}
         <div className="md:w-1/2 flex justify-center items-center order-1 md:order-2 z-10">
           <img
-            src="/images/mockup2.png"
+            src="/images/mockup3.png"
             alt="Illustration"
             className="sm:h-[420px] sm:w-[560px] lg:h-[462px] lg:w-[616px] h-[262px] w-[350px]"
           />

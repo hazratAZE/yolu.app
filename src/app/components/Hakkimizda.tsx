@@ -19,7 +19,7 @@ const Hakkımızda = () => {
         {/* Sol taraf - Resim */}
         <div className="md:w-1/2 mb-6 md:mb-0 order-2 md:order-1">
           <img
-            src="/images/iphonemock2.png" // Sol taraf resim için kaynak
+            src="/images/mockup4.png" // Sol taraf resim için kaynak
             alt="Hakkımızda"
             className="sm:h-[540px] sm:w-[360px] lg:h-[600px] lg:w-[400px] h-[300px] w-[200px]"
           />
