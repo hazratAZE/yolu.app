@@ -61,14 +61,14 @@ const Ozellikler = () => {
                 className="flex flex-col items-start justify-start text-left border-l-4 border-blue-100 pl-6 p-4 bg-blue-50"
               >
                 <div
-                  className="mb-4 rounded-full p-3 text-2xl font-bold text-black"
+                  className="mb-4 rounded-full p-4 text-2xl font-bold text-black"
                   style={{ backgroundColor: feature.color }}
                 >
                   <Image
                     src={feature.icon}
                     alt={"image"}
-                    width={24}
-                    height={24}
+                    width={28}
+                    height={28}
                     className="object-contain"
                   />
                 </div>
