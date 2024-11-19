@@ -54,11 +54,11 @@ const Ozellikler = () => {
       <div className="flex flex-col md:flex-row md:items-center w-full gap-4">
         {/* Sol taraf: Özellikler */}
         <div className="flex flex-col flex-1 order-2 md:order-2">
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+          <div className="grid grid-cols-1 sm:grid-cols-2 pt-4">
             {featuresData.map((feature, index) => (
               <div
                 key={index}
-                className="flex flex-col items-start justify-start text-left border-l-4 border-blue-100 pl-6 p-4 bg-blue-50"
+                className="flex flex-col items-center justify-start text-center  pl-6 p-4 bg-blue-50"
               >
                 <div
                   className="mb-4 rounded-full p-4 text-2xl font-bold text-black"
