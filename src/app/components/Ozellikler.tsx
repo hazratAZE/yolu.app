@@ -60,10 +60,10 @@ const Ozellikler = () => {
             {featuresData.map((feature, index) => (
               <div
                 key={index}
-                className="flex flex-col items-start justify-start text-left border-l-4 border-blue-200 pl-6 p-4 bg-white rounded-xl"
+                className="flex flex-col items-start justify-start text-left border-l-4 border-blue-100 pl-6 p-4 bg-white rounded-xl"
               >
                 <div
-                  className="mb-2 rounded-full p-3 text-2xl font-bold text-black"
+                  className="mb-4 rounded-full p-3 text-2xl font-bold text-black"
                   style={{ backgroundColor: feature.color }}
                 >
                   <Image
@@ -77,7 +77,7 @@ const Ozellikler = () => {
                 <h3 className="text-gray-900 font-sans font-bold mb-1 text-lg">
                   {feature.title}
                 </h3>
-                <p className="text-gray-600">{feature.text}</p>
+                <p className="text-gray-600 leading-tight">{feature.text}</p>
               </div>
             ))}
           </div>
