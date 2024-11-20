@@ -40,6 +40,8 @@
   "how_apply_qr_desc": "Her iş ilanının yanında bir QR kodu bulunmaktadır. Bu QR kodunu telefonunuzla tarayarak, ilanla ilgili başvurunuzu hızlı bir şekilde yapabilirsiniz. QR kodu, başvuru sürecini kolaylaştırarak, ilgili iş ilanına doğrudan ulaşmanıza ve başvurunuzu anında tamamlamanıza imkan tanır.",
   "what_is_virtual_card": "Virtual kart nedir ve nasıl kullanılır?",
   "what_is_virtual_card_desc": "Virtual kart, Yolu platformunda kazandığınız tokenleri saklamak ve harcamak için kullanılan dijital bir karttır. Bu kart sayesinde, partnerlerimizle yapılan alışverişlerde kazandığınız tokenleri biriktirip, istediğiniz zaman harcayabilirsiniz.",
+  "what_is_yolu_token": "Yolu token nedir ve nasıl kazanılır?",
+  "what_is_yolu_token_desc": "Yolu token, yalnızca Yolu platformu içinde kullanılabilen dijital bir birimdir. Bu token'lar, Yolu partnerleriyle alışveriş yaparak veya reklamları izleyerek kazanılabilir. Yolu token'ları, sadece platformda ilanlara başvurmak, ilanları yenilemek ve işlemleri gerçekleştirmek için kullanılır. Ayrıca, kazanılan token'lar istediğiniz zaman platformda satışa sunulabilir. Yolu token'lar, herhangi bir blockchain sistemine bağlı değildir ve yalnızca Yolu ekosistemi içinde geçerlidir.",
   "download_ios": "iOS için İndir",
   "download_android": "Android için İndir",
   "rights_reserved": "Yolu. Tüm hakları saklıdır.",

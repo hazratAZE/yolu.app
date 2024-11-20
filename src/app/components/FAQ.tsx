@@ -24,9 +24,8 @@ const FAQ: React.FC = () => {
       answer: t("what_is_virtual_card_desc"),
     },
     {
-      question: "Token necə qazanılır?",
-      answer:
-        "Partnyor şirkətlərimizdən alış-veriş edərək token qazana bilərsiniz.",
+      question: t("what_is_yolu_token"),
+      answer: t("what_is_yolu_token_desc"),
     },
     {
       question: "Tətbiqi haradan yükləyə bilərəm?",
