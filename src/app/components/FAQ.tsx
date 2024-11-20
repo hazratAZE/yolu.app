@@ -16,7 +16,7 @@ const FAQ: React.FC = () => {
       answer: t("what_is_yolu_desc"),
     },
     {
-      question: "Yolu-da QR ilə müraciət necə edilir?",
+      question: t("how_apply_qr"),
       answer:
         "İş elanı QR kodunu skan edərək sürətli şəkildə müraciət edə bilərsiniz.",
     },
