@@ -13,8 +13,7 @@ const FAQ: React.FC = () => {
   const faqData: FAQItem[] = [
     {
       question: t("what_is_yolu"),
-      answer:
-        "Yolu, iş elanlarına müraciət edə biləcəyiniz və işəgötürənlərlə əlaqə qura biləcəyiniz mobil tətbiqdir.",
+      answer: t("what_is_yolu_desc"),
     },
     {
       question: "Yolu-da QR ilə müraciət necə edilir?",
