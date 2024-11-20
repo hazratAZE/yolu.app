@@ -52,7 +52,7 @@ const FAQ: React.FC = () => {
       </h1>
 
       {/* FAQ ve Resim Kısmı: Flex düzeni içinde */}
-      <div className="w-full max-w-7xl flex flex-col lg:flex-row items-center justify-between px-4">
+      <div className="w-full max-w-7xl flex flex-col lg:flex-row items-center justify-between">
         {/* Sağ Kısım: Resim */}
         <div className="lg:w-1/2 w-full flex justify-center mb-8 lg:mb-0">
           <img
@@ -68,7 +68,7 @@ const FAQ: React.FC = () => {
             {faqData.map((item, index) => (
               <div key={index} className="mb-2 opacity-90">
                 <button
-                  className="w-full text-left flex justify-between items-center py-4 px-8 transition hover:bg-blue-100 rounded-full"
+                  className="w-full text-left flex justify-between items-center py-4 px-4 transition hover:bg-blue-100 rounded-sm"
                   onClick={() => toggleAccordion(index)}
                 >
                   <span className="text-lg text-black font-semibold">
