@@ -111,9 +111,9 @@ const Header = () => {
               {t("features")}
             </Link>
             <Link
-              href="#features"
+              href="#faq"
               className={`relative text-md hover:text-white ${
-                activeSection === "features" ? "text-white font-bold" : ""
+                activeSection === "faq" ? "text-white font-bold" : ""
               }`}
             >
               FAQ
@@ -268,10 +268,10 @@ const Header = () => {
             {t("features")}
           </Link>
           <Link
-            href="#features"
+            href="#faq"
             onClick={() => setIsMenuOpen(false)}
             className={`relative text-md hover:text-white ${
-              activeSection === "features" ? "text-white font-bold" : ""
+              activeSection === "faq" ? "text-white font-bold" : ""
             }`}
           >
             FAQ
