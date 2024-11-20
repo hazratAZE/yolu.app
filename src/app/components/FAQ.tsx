@@ -16,6 +16,10 @@ const FAQ: React.FC = () => {
       answer: t("what_is_yolu_desc"),
     },
     {
+      question: t("how_apply_jobs"),
+      answer: t("how_apply_desc"),
+    },
+    {
       question: t("how_apply_qr"),
       answer: t("how_apply_qr_desc"),
     },
@@ -26,10 +30,6 @@ const FAQ: React.FC = () => {
     {
       question: t("what_is_yolu_token"),
       answer: t("what_is_yolu_token_desc"),
-    },
-    {
-      question: t("how_apply_jobs"),
-      answer: t("how_apply_desc"),
     },
   ];
 
