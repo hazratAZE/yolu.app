@@ -1,4 +1,5 @@
 "use client";
+import { useTranslations } from "next-intl";
 import React, { useState } from "react";
 
 interface FAQItem {
@@ -8,7 +9,7 @@ interface FAQItem {
 
 const FAQ: React.FC = () => {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
-
+  const t = useTranslations();
   const faqData: FAQItem[] = [
     {
       question: "Yolu nədir və necə işləyir?",
@@ -48,7 +49,7 @@ const FAQ: React.FC = () => {
     >
       {/* Başlık: Sayfanın en üstünde ortada */}
       <h1 className="text-center font-bold text-gray-950 mt-16 mb-8">
-        Tez-tez Verilən Suallar
+        {t("faq")}
       </h1>
 
       {/* FAQ ve Resim Kısmı: Flex düzeni içinde */}
