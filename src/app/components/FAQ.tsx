@@ -20,7 +20,7 @@ const FAQ: React.FC = () => {
       answer: t("how_apply_qr_desc"),
     },
     {
-      question: "Virtual kart necə istifadə olunur?",
+      question: t("what_is_virtual_card"),
       answer:
         "Yolu Virtual Kartı qazandığınız tokenləri saxlamaq və xərcləmək üçün istifadə olunur.",
     },
