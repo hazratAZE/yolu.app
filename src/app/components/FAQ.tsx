@@ -12,7 +12,7 @@ const FAQ: React.FC = () => {
   const t = useTranslations();
   const faqData: FAQItem[] = [
     {
-      question: "Yolu nədir və necə işləyir?",
+      question: t("what_is_yolu"),
       answer:
         "Yolu, iş elanlarına müraciət edə biləcəyiniz və işəgötürənlərlə əlaqə qura biləcəyiniz mobil tətbiqdir.",
     },
