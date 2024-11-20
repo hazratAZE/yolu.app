@@ -17,8 +17,7 @@ const FAQ: React.FC = () => {
     },
     {
       question: t("how_apply_qr"),
-      answer:
-        "İş elanı QR kodunu skan edərək sürətli şəkildə müraciət edə bilərsiniz.",
+      answer: t("how_apply_qr_desc"),
     },
     {
       question: "Virtual kart necə istifadə olunur?",

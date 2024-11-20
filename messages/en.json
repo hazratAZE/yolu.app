@@ -37,6 +37,7 @@
   "what_is_yolu": "What is Yolu and how does it work?",
   "what_is_yolu_desc": "Yolu is a mobile application where you can apply for job listings and connect with employers. It presents you with the most relevant and up-to-date job opportunities through daily updated job postings. Additionally, the platform also features long-term or project-based job listings from various fields and industries. Yolu is an effective communication tool for both employers and job seekers, allowing you to connect through both daily listings and other categories.",
   "how_apply_qr": "How to apply via QR code on Yolu?",
+  "how_apply_qr_desc": "Every job listing has a QR code next to it. By scanning this QR code with your phone, you can quickly apply to the job listing. The QR code simplifies the application process, allowing you to directly access the job posting and complete your application instantly.",
   "download_ios": "Download for iOS",
   "download_android": "Download for Android",
   "rights_reserved": "Yolu. All rights reserved.",
