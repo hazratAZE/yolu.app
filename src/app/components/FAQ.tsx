@@ -28,9 +28,8 @@ const FAQ: React.FC = () => {
       answer: t("what_is_yolu_token_desc"),
     },
     {
-      question: "Tətbiqi haradan yükləyə bilərəm?",
-      answer:
-        "Tətbiqimizi App Store və ya Google Play Store-dan yükləyə bilərsiniz.",
+      question: t("how_apply_jobs"),
+      answer: t("how_apply_desc"),
     },
   ];
 
