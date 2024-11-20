@@ -21,8 +21,7 @@ const FAQ: React.FC = () => {
     },
     {
       question: t("what_is_virtual_card"),
-      answer:
-        "Yolu Virtual Kartı qazandığınız tokenləri saxlamaq və xərcləmək üçün istifadə olunur.",
+      answer: t("what_is_virtual_card_desc"),
     },
     {
       question: "Token necə qazanılır?",
