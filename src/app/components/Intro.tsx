@@ -111,7 +111,7 @@ const Intro = () => {
               </div>
             </div>
             <span className="text-gray-800 text-sm font-sans font-normal sm:text-base text-center">
-              +500 Kullanıcı Bizi Seçti
+              +50 {t("users_download_app")}
             </span>
           </div>
         </div>
