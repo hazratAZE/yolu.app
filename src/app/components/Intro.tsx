@@ -102,7 +102,7 @@ const Intro = () => {
                 </div>
               ))}
               <div
-                className="sm:w-12 sm:h-12 w-10 h-10 bg-blue-900 rounded-full flex items-center justify-center text-white font-medium text-sm border-2 border-blue-50"
+                className="sm:w-12 sm:h-12 w-10 h-10 bg-blue-900 rounded-full flex items-center justify-center text-white font-medium sm:text-sm border-2 border-blue-50 text-xs"
                 style={{
                   marginLeft: "-16px",
                 }}
