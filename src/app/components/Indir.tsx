@@ -1,7 +1,6 @@
 "use client";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
-import { useState } from "react"; // useState'i içe aktar
 import React from "react";
 
 const Indir = () => {
