@@ -20,7 +20,7 @@ const Indir = () => {
           <h2 className="text-black mb-4 font-semibold">
             {t("why_i_download")}
           </h2>
-          <p className="text-gray-700 text-[16px] text-left mb-4">
+          <p className="text-gray-700 text-left mb-4">
             {t("explore_features")}
           </p>
           <Link
