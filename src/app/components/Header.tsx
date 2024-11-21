@@ -69,10 +69,6 @@ const Header = () => {
 
     router.push(newPath);
   };
-  const scrollToContact = () => {
-    // Sayfanın en altına kaydırmak için window.scrollTo kullanabilirsiniz
-    window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
-  };
   return (
     <header className="bg-black text-white p-4 fixed w-full z-50 font-sans">
       <div className="container mx-auto flex justify-between items-center ">
@@ -129,7 +125,6 @@ const Header = () => {
 
             {/* "Contact Us" Button */}
             <Link
-              onClick={scrollToContact}
               href="#footer"
               className="text-sm px-4 py-2 bg-blue-400 text-black rounded-full font-medium hover:bg-blue-300 border border-black flex-row flex justify-center items-center"
             >
@@ -288,7 +283,6 @@ const Header = () => {
 
           {/* Mobile "Contact Us" Button */}
           <Link
-            onClick={scrollToContact}
             href="#footer"
             className="text-sm px-4 py-2 bg-blue-400 text-black rounded-full font-medium hover:bg-blue-300 border border-black flex-row flex justify-center items-center"
           >

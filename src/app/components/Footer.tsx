@@ -4,7 +4,10 @@ import { useTranslations } from "next-intl";
 const Footer = () => {
   const t = useTranslations();
   return (
-    <footer className="text-white py-6 mt-20 pt-20 bg-gray-800 w-full">
+    <footer
+      id="footer"
+      className="text-white py-6 mt-20 pt-20 bg-black w-full font-sans"
+    >
       <div className="container mx-auto flex flex-col md:flex-row justify-center items-center mb-12">
         {/* Sosyal Medya İkonları */}
         <div className="text-center flex flex-col mb-4 md:mb-0 sm:mb-8">
@@ -21,7 +24,7 @@ const Footer = () => {
             <img
               src="/icons/linkedin.svg"
               alt="Linkedin"
-              className="w-6 h-6 hover:opacity-80 transition-opacity"
+              className="w-6 h-6 hover:opacity-80 transition-opacity border-2 border-blue-100"
             />
           </a>
           <a
@@ -33,7 +36,7 @@ const Footer = () => {
             <img
               src="/icons/facebook.svg"
               alt="Facebook"
-              className="w-6 h-6 hover:opacity-80 transition-opacity"
+              className="w-6 h-6 hover:opacity-80 transition-opacity border-2 border-blue-100"
             />
           </a>
           <a
@@ -45,7 +48,7 @@ const Footer = () => {
             <img
               src="/icons/instagram.svg"
               alt="Instagram"
-              className="w-6 h-6 hover:opacity-80 transition-opacity"
+              className="w-6 h-6 hover:opacity-80 transition-opacity border-2 border-blue-100"
             />
           </a>
           <a
@@ -57,7 +60,7 @@ const Footer = () => {
             <img
               src="/icons/tiktok.svg"
               alt="TikTok"
-              className="w-6 h-6 hover:opacity-80 transition-opacity"
+              className="w-6 h-6 hover:opacity-80 transition-opacity border-2 border-blue-100"
             />
           </a>
           <a
@@ -69,7 +72,7 @@ const Footer = () => {
             <img
               src="/icons/x.svg"
               alt="Twitter"
-              className="w-6 h-6 hover:opacity-80 transition-opacity"
+              className="w-6 h-6 hover:opacity-80 transition-opacity border-2 border-blue-100"
             />
           </a>
         </div>
