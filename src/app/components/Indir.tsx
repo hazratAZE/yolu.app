@@ -9,7 +9,7 @@ const Indir = () => {
   return (
     <section
       id="download"
-      className="min-h-screen flex flex-col items-center bg-blue-50 justify-center px-4 md:px-16 lg:px-32 pt-16 font-sans"
+      className="min-h-screen flex flex-col items-center bg-blue-50 justify-center px-4 md:px-16 lg:px-32 pt-16 font-sans pb-24"
     >
       <h1 className="text-black font-bold mb-4">{t("download")}</h1>
 

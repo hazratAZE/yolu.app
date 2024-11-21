@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer
       id="footer"
-      className="text-white py-6 mt-20 pt-20 bg-black w-full font-sans"
+      className="text-white py-6 pt-20 bg-black w-full font-sans"
     >
       <div className="container mx-auto flex flex-col md:flex-row justify-center items-center mb-12">
         {/* Sosyal Medya İkonları */}
