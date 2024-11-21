@@ -7,7 +7,7 @@ const Hakkımızda = () => {
   return (
     <section
       id="about"
-      className="flex flex-col items-center justify-center min-h-screen bg-blue-50 md:px-16 lg:px-32 px-4 pt-16 font-sans"
+      className="flex w-full flex-col items-center justify-center min-h-screen bg-blue-50 md:px-16 lg:px-32 px-4 pt-16 font-sans"
     >
       {/* Başlık */}
       <h1 className="font-bold text-black text-center mb-2">

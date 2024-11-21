@@ -5,6 +5,7 @@ import Hakkimizda from "../components/Hakkimizda"; // Hakkımızda bileşenini i
 import Indir from "../components/Indir";
 import Footer from "../components/Footer";
 import FAQ from "../components/FAQ";
+import ScrollToTopButton from "../components/ScrollToTopButton";
 export default function Home() {
   return (
     <div className="min-h-screen flex flex-col bg-gray-100">
@@ -16,6 +17,7 @@ export default function Home() {
         <FAQ /> {/* Özellikler bileşeni */}
         <Indir /> {/* İndir bileşeni */}
         <Footer /> {/* Footer'ı burada ekliyoruz */}
+        <ScrollToTopButton />
       </main>
     </div>
   );
