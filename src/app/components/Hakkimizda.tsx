@@ -57,7 +57,7 @@ const Hakkımızda = () => {
           </Link>
         </div>
       </div>
-      <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-16 px-4 mt-16">
+      <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-16 mt-16">
         {featuresData.map((_, idx) => (
           <div
             key={idx}
@@ -75,7 +75,7 @@ const Hakkımızda = () => {
         ))}
       </div>
       <h2 className="text-gray-900 font-semibold mt-8">{t("we_working_on")}</h2>
-      <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 px-4 mt-8">
+      <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
         {/* Vizyon */}
         <div className="flex flex-col items-start text-left bg-gray-900 p-4 rounded-sm">
           <img
