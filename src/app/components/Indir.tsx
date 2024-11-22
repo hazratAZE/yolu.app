@@ -16,7 +16,7 @@ const Indir = () => {
       {/* Flexbox kullanarak resim ve metin düzeni */}
       <div className="flex flex-col md:flex-row items-stretch justify-center w-full">
         {/* Paragraf Sol Taraf */}
-        <div className="md:w-3/5 flex flex-col justify-center items-baseline p-6  overflow-hidden">
+        <div className="md:w-3/5 flex flex-col justify-center items-baseline p-6  overflow-hidden order-2 md:order-1">
           <h2 className="text-black mb-4 font-semibold">
             {t("why_i_download")}
           </h2>
