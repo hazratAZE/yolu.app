@@ -69,14 +69,14 @@ const Intro = () => {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Download for Android"
-              className="rounded-xl w-[160px] h-[50px] sm:w-[280px] sm:h-[80px] shadow-md bg-no-repeat bg-center bg-cover hover:opacity-90 transition"
+              className="rounded-xl w-[160px] h-[50px] sm:w-[280px] sm:h-[80px] shadow-lg bg-no-repeat bg-center bg-cover hover:opacity-90 transition"
               style={{
                 backgroundImage: "url('/images/android.png')",
               }}
             ></a>
             <a
               onClick={handleIOSClick}
-              className="rounded-xl w-[160px] h-[50px] sm:w-[280px] sm:h-[80px] shadow-md bg-no-repeat bg-center bg-cover hover:opacity-90 transition"
+              className="rounded-xl w-[160px] h-[50px] sm:w-[280px] sm:h-[80px] shadow-lg bg-no-repeat bg-center bg-cover hover:opacity-90 transition"
               style={{
                 backgroundImage: "url('/images/ios.jpg')",
               }}

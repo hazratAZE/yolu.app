@@ -7,16 +7,20 @@ const Hakkımızda = () => {
   const featuresData = [
     {
       icon: "https://media.istockphoto.com/id/1404301067/photo/3d-cartoon-two-hands-giving-a-high-five-teamwork-concept-character-hand-emoji-business.jpg?s=612x612&w=0&k=20&c=SwDl0ayzvNRyFGA-aJspD3xiX1dS4gnHqWCH2276YcY=",
-      title: t("team_collaboration"), // Çok daha açık kırmızı // Çok daha açık mavi
+      title: t("team_collaboration"),
+      desc: t("team_collaboration_desc"),
+      // Çok daha açık kırmızı // Çok daha açık mavi
     },
     {
       icon: "https://img.freepik.com/premium-photo/3d-render-customer-hand-thumb-up-like-gesture-isolated-blue-background-positive-feedback_422666-3504.jpg",
-      title: t("customer_satisfaction"), // Çok daha açık kırmızı
+      title: t("customer_satisfaction"),
+      desc: t("customer_satisfaction_desc"), // Çok daha açık kırmızı
       // Çok daha açık mor
     },
     {
       icon: "https://img.freepik.com/free-psd/3d-team-work-concept-background_23-2151527886.jpg",
-      title: t("innovation"), // Çok daha açık kırmızı
+      title: t("innovation"),
+      desc: t("innovation_desc"), // Çok daha açık kırmızı
     },
   ];
   return (
@@ -50,7 +54,7 @@ const Hakkımızda = () => {
           {/* Buton */}
           <Link
             href={"#features"}
-            className="px-6 py-3 text-black font-sans font-medium border-gray-900 border-2 rounded-full hover:bg-blue-800 hover:text-white hover:border-0 bg-blue-50"
+            className="px-6 py-3 text-black font-sans font-medium border-gray-900 border-2 rounded-full hover:bg-blue-800 hover:text-white hover:border-0 bg-blue-50 shadow-md"
           >
             {t("features")}{" "}
             {/* Burada "learn_more" çevirisini kullanabilirsiniz */}
@@ -61,16 +65,17 @@ const Hakkımızda = () => {
         {featuresData.map((_, idx) => (
           <div
             key={idx}
-            className="flex flex-col items-start bg-blue-100 rounded-sm p-4"
+            className="flex flex-col items-start bg-blue-100 rounded-3xl p-4"
           >
             <img
               src={_.icon} // Her bir resim için farklı kaynak
               alt={`Feature ${idx + 1}`}
-              className="w-full h-full mb-4 rounded-sm object-cover"
+              className="w-24 h-24 mb-4 object-cover rounded-full border-2 shadow-md"
             />
-            <h3 className="text-black text-[20px] text-left mt-2 font-semibold">
+            <h3 className="text-black text-[20px] text-left font-semibold">
               {_.title}
             </h3>
+            <p className="text-gray-700 mt-2">{_.desc}</p>
           </div>
         ))}
       </div>
