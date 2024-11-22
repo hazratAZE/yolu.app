@@ -6,19 +6,19 @@ const Hakkımızda = () => {
   const t = useTranslations();
   const featuresData = [
     {
-      icon: "https://media.istockphoto.com/id/1404301067/photo/3d-cartoon-two-hands-giving-a-high-five-teamwork-concept-character-hand-emoji-business.jpg?s=612x612&w=0&k=20&c=SwDl0ayzvNRyFGA-aJspD3xiX1dS4gnHqWCH2276YcY=",
+      icon: "/images/team.png",
       title: t("team_collaboration"),
       desc: t("team_collaboration_desc"),
       // Çok daha açık kırmızı // Çok daha açık mavi
     },
     {
-      icon: "https://img.freepik.com/premium-photo/3d-render-customer-hand-thumb-up-like-gesture-isolated-blue-background-positive-feedback_422666-3504.jpg",
+      icon: "/images/like.jpg",
       title: t("customer_satisfaction"),
       desc: t("customer_satisfaction_desc"), // Çok daha açık kırmızı
       // Çok daha açık mor
     },
     {
-      icon: "https://media.istockphoto.com/id/1505560355/vector/space-rocket-with-smoke-3d-icon-illustration.jpg?s=612x612&w=0&k=20&c=dP8C5-GrMf9croJLmBJZRp-BQrMgzUXDhRjs9P_UsJw=",
+      icon: "/images/idea.jpg",
       title: t("innovation"),
       desc: t("innovation_desc"), // Çok daha açık kırmızı
     },

@@ -25,7 +25,7 @@ const Indir = () => {
           </p>
           <Link
             href={"#intro"}
-            className="px-8 py-3 text-black font-sans font-medium border-gray-900 border-2 rounded-full hover:bg-blue-800 hover:text-white hover:border-blue-800 bg-blue-50"
+            className="px-8 py-3 text-black font-sans font-medium border-gray-900 border-2 rounded-full hover:bg-blue-800 hover:text-white hover:border-blue-800 bg-blue-50 shadow-md"
           >
             {t("download")}{" "}
             {/* Burada "learn_more" çevirisini kullanabilirsiniz */}

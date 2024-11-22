@@ -89,7 +89,7 @@ const Intro = () => {
               {users.map((user, index) => (
                 <div
                   key={index}
-                  className="sm:w-12 sm:h-12 w-10 h-10 bg-gray-200 rounded-full overflow-hidden border-2 border-blue-50"
+                  className="sm:w-12 sm:h-12 w-10 h-10 bg-gray-200 rounded-full overflow-hidden border-2 border-blue-50 shadow-md"
                   style={{
                     marginLeft: index !== 0 ? "-16px" : "0", // İlk öğe için soldan kayma yok
                   }}
@@ -102,7 +102,7 @@ const Intro = () => {
                 </div>
               ))}
               <div
-                className="sm:w-12 sm:h-12 w-10 h-10 bg-blue-900 rounded-full flex items-center justify-center text-white font-medium sm:text-sm border-2 border-blue-50 text-xs"
+                className="sm:w-12 sm:h-12 w-10 h-10 bg-blue-900 rounded-full flex items-center justify-center text-white font-medium sm:text-sm border-2 border-blue-50 text-xs shadow-md"
                 style={{
                   marginLeft: "-16px",
                 }}
