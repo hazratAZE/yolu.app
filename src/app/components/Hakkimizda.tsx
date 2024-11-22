@@ -77,25 +77,25 @@ const Hakkımızda = () => {
       <h2 className="text-gray-900 font-semibold mt-8">{t("we_working_on")}</h2>
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
         {/* Vizyon */}
-        <div className="flex flex-col items-start text-left bg-gray-900 p-4 rounded-sm">
+        <div className="flex flex-col items-start text-left bg-gray-950 p-4 rounded-sm">
           <img
             src="/images/screen.png"
             alt="Vizyon"
             className="w-full h-64 mb-6 object-cover"
           />
-          <h2 className="font-semibold text-gray-50 mb-4">{t("our_vision")}</h2>
-          <p className="text-gray-300">{t("vision_desc")}</p>
+          <h2 className="font-semibold text-gray-50 mb-2">{t("our_vision")}</h2>
+          <p className="text-gray-400">{t("vision_desc")}</p>
         </div>
 
         {/* Misyon */}
-        <div className="flex flex-col items-start text-left bg-gray-900 p-4 py-8 rounded-sm">
+        <div className="flex flex-col items-start text-left bg-gray-950 p-4 py-8 rounded-sm">
           <img
             src="/images/mission.jpg"
             alt="Misyon"
             className="w-full h-64 mb-6 object-cover"
           />
-          <h2 className="font-semibold text-gray-50 mb-4">{t("mission")}</h2>
-          <p className="text-gray-300">{t("mission_desc")}</p>
+          <h2 className="font-semibold text-gray-50 mb-2">{t("mission")}</h2>
+          <p className="text-gray-400">{t("mission_desc")}</p>
         </div>
       </div>
       {/* Mobil uyum için düzenleme */}
