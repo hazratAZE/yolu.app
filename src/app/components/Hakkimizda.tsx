@@ -18,7 +18,7 @@ const Hakkımızda = () => {
       // Çok daha açık mor
     },
     {
-      icon: "https://img.freepik.com/free-psd/3d-team-work-concept-background_23-2151527886.jpg",
+      icon: "https://media.istockphoto.com/id/1505560355/vector/space-rocket-with-smoke-3d-icon-illustration.jpg?s=612x612&w=0&k=20&c=dP8C5-GrMf9croJLmBJZRp-BQrMgzUXDhRjs9P_UsJw=",
       title: t("innovation"),
       desc: t("innovation_desc"), // Çok daha açık kırmızı
     },
