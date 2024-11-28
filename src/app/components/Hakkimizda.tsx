@@ -65,7 +65,7 @@ const Hakkımızda = () => {
         {featuresData.map((_, idx) => (
           <div
             key={idx}
-            className="flex flex-col items-start bg-blue-100 rounded-3xl p-4"
+            className="flex flex-col items-start bg-blue-100 rounded-3xl p-4 pb-8"
           >
             <img
               src={_.icon} // Her bir resim için farklı kaynak
