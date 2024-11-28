@@ -66,7 +66,7 @@ const Ozellikler = () => {
             {featuresData.map((feature, index) => (
               <div
                 key={index}
-                className="flex flex-col items-center justify-start text-center  pl-6 p-6 rounded-3xl bg-blue-100 opacity-90"
+                className="flex flex-col items-center justify-start text-center  pl-6 p-6 rounded-3xl bg-blue-100 opacity-90 shadow-md"
               >
                 <div
                   className="mb-4 rounded-full p-3 text-2xl font-bold text-black border-2 shadow-md"

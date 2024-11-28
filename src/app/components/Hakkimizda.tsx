@@ -65,7 +65,7 @@ const Hakkımızda = () => {
         {featuresData.map((_, idx) => (
           <div
             key={idx}
-            className="flex flex-col items-start bg-blue-100 rounded-3xl p-4 pb-8"
+            className="flex flex-col items-start bg-blue-100 rounded-3xl p-4 pb-8 shadow-lg"
           >
             <img
               src={_.icon} // Her bir resim için farklı kaynak
@@ -80,29 +80,31 @@ const Hakkımızda = () => {
         ))}
       </div>
       <h2 className="text-gray-900 font-semibold mt-8">{t("we_working_on")}</h2>
-      <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+      <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 mt-8 pb-4">
         {/* Vizyon */}
-        <div className="flex flex-col items-start text-left bg-blue-50 pb-8 rounded-3xl">
+        <div className="flex flex-col items-start text-left bg-blue-100 pb-8 rounded-3xl shadow-lg">
           <img
             src="/images/screen.png"
             alt="Vizyon"
-            className="w-full h-64 mb-6 object-cover rounded-2xl"
+            className="w-full h-64 mb-6 object-cover rounded-t-3xl"
           />
-          <h2 className="font-semibold text-gray-950 mb-2">
+          <h2 className="font-semibold text-gray-950 mb-2 px-4">
             {t("our_vision")}
           </h2>
-          <p className="text-gray-700">{t("vision_desc")}</p>
+          <p className="text-gray-700 px-4">{t("vision_desc")}</p>
         </div>
 
         {/* Misyon */}
-        <div className="flex flex-col items-start text-left bg-blue-50 pb-4 rounded-3xl">
+        <div className="flex flex-col items-start text-left bg-blue-100 pb-4 rounded-3xl shadow-lg">
           <img
             src="/images/mission.jpg"
             alt="Misyon"
-            className="w-full h-64 mb-6 object-cover rounded-2xl"
+            className="w-full h-64 mb-6 object-cover rounded-t-3xl"
           />
-          <h2 className="font-semibold text-gray-950 mb-2">{t("mission")}</h2>
-          <p className="text-gray-700">{t("mission_desc")}</p>
+          <h2 className="font-semibold text-gray-950 mb-2 px-4">
+            {t("mission")}
+          </h2>
+          <p className="text-gray-700 px-4">{t("mission_desc")}</p>
         </div>
       </div>
       {/* Mobil uyum için düzenleme */}
