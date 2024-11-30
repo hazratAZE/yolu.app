@@ -50,6 +50,15 @@ const Hakkımızda = () => {
             <span className="text-blue-700">Yolu</span>-{t("yolu_desc")}
           </h2>
           <p className="text-gray-800 mb-10">{t("yolu_startup_desc")}</p>{" "}
+          <div className="w-full flex justify-center mt-4 mb-12">
+            <div className="relative w-full max-w-4xl  overflow-hidden rounded-3xl shadow-lg">
+              <video
+                src="./videos/promo.mp4" // Tanıtım videosunun yolu
+                controls
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </div>
           {/* Vizyonumuz Açıklaması */}
           {/* Buton */}
           <Link
@@ -61,6 +70,7 @@ const Hakkımızda = () => {
           </Link>
         </div>
       </div>
+
       <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-16 mt-16">
         {featuresData.map((_, idx) => (
           <div
