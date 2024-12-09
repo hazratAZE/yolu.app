@@ -1,9 +1,75 @@
+"use client";
+
 import { useTranslations } from "next-intl";
 import Link from "next/link"; // Sayfalar için Link bileşenini kullanıyoruz
+import { useEffect, useState } from "react";
 
 // components/Footer.js
+interface CustomAlertProps {
+  message: string;
+  header: string;
+  onClose: () => void;
+  buttonText?: string; // Dışarıdan gelecek buton metni için opsiyonel prop
+}
+
+const CustomAlert: React.FC<CustomAlertProps> = ({
+  message,
+  header,
+  onClose,
+  buttonText = "Bağla",
+}) => {
+  return (
+    <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
+      <div className="bg-white rounded-3xl p-6 shadow-lg md:w-[30%] sm:w-[90%] max-h-[80%] overflow-y-auto">
+        <div className="text-black mb-4 text-lg font-semibold">{header}</div>
+        <div className="text-gray-700 text-sm font-light text-center max-h-[50vh] overflow-y-auto">
+          {message}
+        </div>
+        <div className="mt-4 flex justify-center">
+          <button
+            onClick={onClose}
+            className="bg-orange-500 text-white px-6 py-2 rounded-full"
+          >
+            {buttonText}
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
 const Footer = () => {
+  const [isAlertVisible, setAlertVisible] = useState(false);
+  const [alertMessage, setAlertMessage] = useState<string | null>(null);
+
   const t = useTranslations();
+
+  useEffect(() => {
+    const fetchAlertMessage = async () => {
+      try {
+        const lang = localStorage.getItem("selectedLanguage") || "en"; // Varsayılan olarak 'en' kullan
+        const params = new URLSearchParams({ lang }); // Parametre ekleme
+        const response = await fetch(
+          `https://workly-l2vi.onrender.com/api/v1/about/terms?${params}`
+        );
+        if (!response.ok) {
+          throw new Error("Sunucudan geçerli bir cevap alınamadı.");
+        }
+        const data = await response.json();
+        console.log(data.data);
+        setAlertMessage(data.data || "Varsayılan mesaj burada.");
+      } catch (error) {
+        console.error("Mesaj alınamadı:", error);
+        setAlertMessage("Mesaj alınamadı, lütfen daha sonra tekrar deneyin.");
+      }
+    };
+
+    fetchAlertMessage();
+  }, []);
+
+  const closeAlert = () => {
+    setAlertVisible(false);
+  };
   return (
     <footer
       id="footer"
@@ -95,8 +161,15 @@ const Footer = () => {
           <Link href="#faq" className="text-md hover:opacity-80 mb-2">
             FAQ
           </Link>
-          <Link href="#download" className="text-md hover:opacity-80">
+          <Link href="#download" className="text-md hover:opacity-80 mb-2">
             {t("download")}
+          </Link>
+          <Link
+            href="#footer"
+            onClick={() => setAlertVisible(true)}
+            className="text-md hover:opacity-80 text-orange-600 text-sm"
+          >
+            {t("terms_conditions")}
           </Link>
         </div>
       </div>
@@ -107,6 +180,14 @@ const Footer = () => {
           © {new Date().getFullYear()} {t("rights_reserved")}
         </p>
       </div>
+      {isAlertVisible && alertMessage && (
+        <CustomAlert
+          message={alertMessage}
+          header={t("terms_conditions")}
+          buttonText={t("close")}
+          onClose={closeAlert}
+        />
+      )}
     </footer>
   );
 };

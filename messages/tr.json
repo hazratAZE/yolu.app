@@ -57,5 +57,6 @@
   "close": "Kapat",
   "ios_warn": "Uygulamamız şu anda iOS platformunda mevcut değil. Ancak, iOS kullanıcıları için mükemmel bir deneyim oluşturmak için çalışıyoruz. İlginiz için teşekkür ederiz, yakın zamanda iOS'da da bizimle olacaksınız!",
   "email": "Email",
-  "phone": "Telefon"
+  "phone": "Telefon",
+  "terms_conditions": "Şartlar ve Koşullar"
 }

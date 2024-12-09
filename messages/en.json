@@ -57,5 +57,6 @@
   "close": "Close",
   "ios_warn": "Our application is currently not available on the iOS platform. However, we are working on creating a perfect experience for iOS users. Thank you for your attention, and you will be with us on iOS soon!",
   "email": "Email",
-  "phone": "Phone"
+  "phone": "Phone",
+  "terms_conditions": "Terms and Conditions"
 }
